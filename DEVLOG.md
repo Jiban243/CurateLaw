@@ -1,0 +1,9 @@
+## 2026-11-10 — Synthetic dataset freeze and provisional curation cohorts
+
+- **Contributor:** Jiban (`Jiban243`)
+- **Commit:** **Pending verification.** The commit hash and message were not available from the accessible repository history. Fill both from `git log -1 --format='%h %s'` on the contributor branch before merging this entry.
+- **Work done:** Prepared the M1 source-provenance and clause-review workflow; generated and froze **400 synthetic instruction–response pairs** and **40 separate evaluation scenarios**; ran CuratorKIT hygiene (**400 passed**) and task-aware scoring (**309 strong candidates, 84 held for review, 7 provisional exclusions**); created task-matched **150-example raw and curated candidate cohorts** and a **27-item human-calibration queue**.
+- **Design decisions:** Keep the raw pool immutable, separate evaluation data before training, and match task quotas between cohorts to better isolate the effect of curation. Treat heuristic screening and legal/training approval as distinct decisions.
+- **Approach & trade-offs:** Lightweight deterministic checks and reproducible manifests minimize API cost and are easy to audit, but keyword-based checks can miss legal issues or flag valid formatting. Exact response repetition (**21 extra occurrences**) needs contextual review; identical responses do not necessarily mean identical instruction–response pairs.
+- **Limitations:** Human calibration, legal applicability, source permissions, and semantic leakage checks remain incomplete. Candidate cohorts are **not training-approved**; no fine-tuning or downstream quality improvement has yet been demonstrated.
+- **Future improvements:** Review the 27 calibration items, correct false positives/negatives, strengthen legal and diversity checks, finalize approved task-matched cohorts, then run identical AlignTune configurations and compare base/raw/curated models with AuditKIT.
