@@ -1,0 +1,471 @@
+{
+  "schema_name": "CurateLaw_India_Employment_Contract",
+  "version": "m1.0",
+  "created_on": "2026-11-08",
+  "jurisdiction": "India; apply state-specific and worker/establishment eligibility gates",
+  "intended_use": "Teacher LLM reference schema for synthetic scenarios; not a legal advice or executable template",
+  "required_scenario_metadata": [
+    "scenario_id",
+    "jurisdiction_state",
+    "establishment_type",
+    "employer_type",
+    "employee_role",
+    "employment_type",
+    "applicable_law_confirmed",
+    "effective_law_as_of",
+    "reference_source_ids"
+  ],
+  "sections": [
+    {
+      "section_id": "parties",
+      "heading": "Parties and execution",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "employer_legal_name",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "employer_registered_address",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "employee_name_placeholder",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "agreement_date",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "appointment",
+      "heading": "Appointment / employment nature",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "employment_type",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "joining_date",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "effective_date",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "work_state",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "work_city",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "role_duties",
+      "heading": "Role and responsibilities",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "designation",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "department",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "reports_to",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "job_duties",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "workplace",
+      "heading": "Place of work",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "office_address",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "work_mode",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "relocation_policy",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "compensation",
+      "heading": "Salary and pay cycle",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "base_pay_inr",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "allowances",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "variable_pay",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "wage_period",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "payment_method",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "probation",
+      "heading": "Probation and confirmation",
+      "required_for_schema": false,
+      "fields": [
+        {
+          "name": "probation_duration_months",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "probation_conditions",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "confirmation_process",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "working_hours",
+      "heading": "Working hours and weekly rest",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "weekly_work_days",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "daily_hours",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "weekly_rest_day",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "overtime_eligibility",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "leave_benefits",
+      "heading": "Leave, holidays and benefits",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "leave_policy_reference",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "paid_leave",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "public_holidays",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "insurance",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "social_security",
+      "heading": "Statutory contributions",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "epf_applicability",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "esi_applicability",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "gratuity_eligibility",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "maternity_benefits",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "confidentiality",
+      "heading": "Confidentiality and data handling",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "confidential_information_scope",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "permitted_disclosures",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "return_on_exit",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "ip",
+      "heading": "Intellectual property",
+      "required_for_schema": false,
+      "fields": [
+        {
+          "name": "work_product_definition",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "ownership_scope",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "assignment_terms",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "preexisting_ip_exceptions",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "workplace_policy",
+      "heading": "Workplace conduct and policies",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "anti_harassment_policy",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "grievance_reference",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "disciplinary_policy",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "termination",
+      "heading": "Termination and exit",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "grounds_for_termination",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "notice_period_by_party",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "payment_in_lieu",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "final_settlement",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "handover",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "dispute_resolution",
+      "heading": "Governing law and dispute resolution",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "governing_law",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "court_city",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "dispute_process",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "signatures",
+      "heading": "Signatures",
+      "required_for_schema": true,
+      "fields": [
+        {
+          "name": "employer_signatory",
+          "type": "string_or_null",
+          "required": true
+        },
+        {
+          "name": "employee_signature_placeholder",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "signing_date",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    },
+    {
+      "section_id": "optional",
+      "heading": "Additional clauses",
+      "required_for_schema": false,
+      "fields": [
+        {
+          "name": "expenses",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "bonus",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "esop",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "travel",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "remote_work",
+          "type": "string_or_null",
+          "required": false
+        },
+        {
+          "name": "non_solicit_under_review",
+          "type": "string_or_null",
+          "required": false
+        }
+      ]
+    }
+  ],
+  "generation_constraints": {
+    "do_not_invent_statutory_thresholds": true,
+    "do_not_insert_post_employment_non_compete_by_default": true,
+    "no_real_personal_identifiers": true,
+    "do_not_treat_old_templates_as_current_law": true,
+    "use_versioned_statutes_and_jurisdiction": true,
+    "trace_all_nondiscretionary_statements_to_source_id_and_locator": true,
+    "draft_status_must_be": "requires_indian_legal_review",
+    "unknown_or_unverified_rule_action": "flag_for_review_not_guess"
+  },
+  "evidence_categories": [
+    "statutory_rule",
+    "statutory_reference",
+    "state_statutory_reference",
+    "template_observation"
+  ],
+  "expected_output": {
+    "scenario": "object",
+    "drafting_instructions": "string",
+    "draft_sections": "array",
+    "grounding_references": "array[source_id,source_locator]",
+    "compliance_flags": "array",
+    "review_status": "string"
+  }
+}

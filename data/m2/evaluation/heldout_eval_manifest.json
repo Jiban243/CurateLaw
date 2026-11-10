@@ -1,0 +1,17 @@
+{
+  "dataset": "heldout_eval_040",
+  "status": "provisional_pending_human_review",
+  "count": 40,
+  "task_distribution": {
+    "full_agreement": 8,
+    "clause_drafting": 8,
+    "contract_customization": 8,
+    "contradiction_correction": 8,
+    "missing_clause_completion": 8
+  },
+  "sha256": "944ba82ed4937a41f32c064aaaa89f1b34aeb2d44a89e0860aac51aa3d46bff9",
+  "train_overlap_check": "exact_instruction_only",
+  "training_excluded": true,
+  "legal_verification_completed": false,
+  "gold_reference_answers_available": false
+}

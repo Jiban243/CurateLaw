@@ -1,0 +1,17 @@
+{
+  "total_raw_generated": 400,
+  "task_distribution": {
+    "contradiction_correction": 60,
+    "full_agreement": 120,
+    "contract_customization": 80,
+    "missing_clause_completion": 40,
+    "clause_drafting": 100
+  },
+  "screening_distribution": {
+    "passed_heuristics": 320,
+    "needs_manual_review": 80
+  },
+  "total_completion_tokens_if_reported": 186625,
+  "training_approved": 0,
+  "limitations": "Heuristic screening only; not legal verification, factual certification, or permission clearance."
+}

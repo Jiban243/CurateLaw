@@ -1,0 +1,12 @@
+
+.venv/
+.env
+.env.*
+__pycache__/
+*.pyc
+*.bak
+.DS_Store
+data/m1/corpus/raw_sources/downloaded/
+data/m1/corpus/processed_sources/
+data/m1/corpus/extracted_clauses/
+data/m1/corpus/reports/

@@ -1,0 +1,11 @@
+scenario_id,task_type,execution_section_detected,payment_in_lieu_mentioned,review_flags,legal_review_completed,approved_for_training
+GEN0001,contradiction_correction,false,false,,false,false
+GEN0002,full_agreement,true,true,repealed_act_current_use_review,false,false
+GEN0003,contract_customization,false,false,,false,false
+GEN0004,contract_customization,false,false,,false,false
+GEN0005,full_agreement,true,true,,false,false
+GEN0006,missing_clause_completion,false,false,,false,false
+GEN0007,contradiction_correction,false,false,,false,false
+GEN0008,clause_drafting,false,false,,false,false
+GEN0009,contract_customization,false,false,,false,false
+GEN0010,missing_clause_completion,false,false,,false,false

@@ -1,0 +1,16 @@
+{
+  "count": 400,
+  "distribution": {
+    "contradiction_correction": 60,
+    "full_agreement": 120,
+    "contract_customization": 80,
+    "missing_clause_completion": 40,
+    "clause_drafting": 100
+  },
+  "sha256": "58a755d55ef220b6e1600c28d44ea37d1e2b4c9cb449108b9f3d648520fa1e22",
+  "heldout_sha256": "944ba82ed4937a41f32c064aaaa89f1b34aeb2d44a89e0860aac51aa3d46bff9",
+  "seed": 20261109,
+  "status": "scenario_prompts_only_not_training_data",
+  "exact_overlap_detected": false,
+  "human_review": "pending"
+}

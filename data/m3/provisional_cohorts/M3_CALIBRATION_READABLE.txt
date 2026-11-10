@@ -1,0 +1,1336 @@
+
+===========================================================================
+REVIEW ITEM 1 — GEN0289
+===========================================================================
+scenario_id: GEN0289
+review_purpose: calibration_strong_sample
+task_type: full_agreement
+screening_tier: strong_screening_candidate
+quality_score_heuristic: 100
+instruction: For a fictional UI Engineer employed in Telangana, India, draft an illustrative employment agreement with INR 1900000 fixed annual salary, a on-site work arrangement, 38 scheduled hours per week, 6 months of probation, and 45 days of mutual notice. Include parties, appointment, duties, workplace, salary, probation, working time, leave, applicable statutory benefits, confidentiality, work-related IP, workplace policy, termination, disputes and signatures. Use party and date placeholders. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional UI Engineer employed in Telangana, India, draft an illustrative employment agreement with INR 1900000 fixed annual salary, a on-site work arrangement, 38 scheduled hours per week, 6 months of probation, and 45 days of mutual notice. Include parties, appointment, duties, workplace, salary, probation, working time, leave, applicable statutory benefits, confidentiality, work-related IP, workplace policy, termination, disputes and signatures. Use party and date placeholders. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+
+
+GENERATED RESPONSE:
+**EMPLOYMENT AGREEMENT**
+
+This Employment Agreement ("Agreement") is made and entered into on this ___ day of __________, 20__, by and between:
+
+**[Employer Name]**, a company incorporated under the laws of India, having its registered office at [Employer Address], Telangana, India  
+(hereinafter referred to as the "Employer"),
+
+**AND**
+
+**[Employee Name]**, residing at [Employee Address], Telangana, India  
+(hereinafter referred to as the "Employee").
+
+Collectively referred to as the "Parties".
+
+---
+
+### 1. **APPOINTMENT**  
+The Employer hereby appoints the Employee to the position of **UI Engineer**, and the Employee accepts such appointment, subject to the terms and conditions set forth in this Agreement.
+
+---
+
+### 2. **DUTIES AND RESPONSIBILITIES**  
+The Employee shall perform the duties and responsibilities customary to the role of a UI Engineer, including but not limited to designing and implementing user interface components, collaborating with development teams, ensuring responsive and accessible design, and maintaining technical documentation. The Employee shall report to the designated supervisor and perform all lawful and reasonable instructions assigned by the Employer.
+
+---
+
+### 3. **WORKPLACE**  
+The primary place of work shall be the Employer’s office located in **Telangana, India**. The Employee shall work on an **on-site basis** and shall not be permitted to work remotely unless explicitly authorized in writing by the Employer.
+
+---
+
+### 4. **SALARY AND COMPENSATION**  
+The Employee shall receive a fixed annual salary of **INR 1,900,000 (Indian Rupees Seventeen Lakh Ninety Thousand Only)**, payable in equal monthly installments in accordance with the Employer’s payroll schedule. This amount constitutes the Employee’s fixed compensation and is subject to applicable statutory deductions, including but not limited to income tax, Provident Fund, and Professional Tax.
+
+No additional compensation, bonuses, or benefits are guaranteed under this Agreement unless separately approved in writing by the Employer.
+
+---
+
+### 5. **PROBATION PERIOD**  
+The Employee shall undergo a probationary period of **six (6) months** from the date of joining. During this period, the performance and suitability of the Employee shall be evaluated. The Employer reserves the right to terminate the employment during probation with **fourteen (14) days’ written notice** or pay in lieu thereof, without assigning any reason. Upon successful completion of the probation, the Employee’s position may be confirmed at the discretion of the Employer.
+
+---
+
+### 6. **WORKING TIME**  
+The normal working hours shall be **thirty-eight (38) hours per week**, to be scheduled in accordance with the Employer’s operational requirements. The Employee may be required to work additional hours as necessary to fulfill job responsibilities, subject to compliance with applicable labor laws.
+
+---
+
+### 7. **LEAVE**  
+The Employee shall be entitled to leave in accordance with the applicable statutory provisions, including but not limited to the **Andhra Pradesh Shops and Establishments Act, 1988** (as applicable to Telangana), and any rules framed thereunder. Leave entitlements, including earned leave, sick leave, and public holidays, shall be administered in line with statutory requirements and the Employer’s leave policy, as may be amended from time to time.
+
+---
+
+### 8. **STATUTORY BENEFITS**  
+The Employee shall be entitled to benefits under applicable Indian labor laws, including but not limited to:  
+- Employees’ Provident Fund and Pension Scheme (EPF & EPS),  
+- Employees’ State Insurance (ESI), where applicable,  
+- Maternity Benefit (as per the Maternity Benefit Act, 1961),  
+- Gratuity (as per the Payment of Gratuity Act, 1972), upon fulfilling eligibility criteria.  
+
+The Employer shall comply with all statutory obligations in relation to deductions, contributions, and filings.
+
+---
+
+### 9. **CONFIDENTIALITY**  
+The Employee shall not, during or after employment, disclose or use any confidential information, trade secrets, or proprietary data of the Employer, except as required in the course of authorized duties or as permitted by law. This obligation shall continue after termination of employment, to the extent permitted by law.
+
+---
+
+### 10. **INTELLECTUAL PROPERTY**  
+All intellectual property, including but not limited to software, designs, code, documentation, and inventions, created by the Employee during the course of employment and relating to the Employer’s business shall be the sole and exclusive property of the Employer. The Employee shall execute all necessary documents to assign such rights to the Employer, as required.
+
+---
+
+### 11. **WORKPLACE POLICIES**  
+The Employee shall comply with all workplace policies, codes of conduct, safety regulations, and procedures established by the Employer from time to time, including those relating to data security, IT usage, and anti-harassment. Any violation may result in disciplinary action, up to and including termination.
+
+---
+
+### 12. **TERMINATION**  
+Either Party may terminate this Agreement by providing **forty-five (45) days** of prior written notice to the other Party, or by paying salary in lieu of the unexpired portion of the notice period. The Employer reserves the right to terminate employment summarily for cause, including misconduct, breach of policy, or violation of law, in accordance with applicable law.
+
+Upon termination, the Employee shall return all company property, documents, and access credentials.
+
+---
+
+### 13. **DISPUTE RESOLUTION**  
+Any dispute arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the competent courts in **Telangana, India**. The Parties agree to first attempt resolution through good-faith discussions before initiating legal proceedings.
+
+---
+
+### 14. **GOVERNING LAW**  
+This Agreement shall be governed by and construed in accordance with the laws of India, including applicable employment statutes and regulations in force in Telangana.
+
+---
+
+### 15. **MISCELLANEOUS**  
+- This Agreement constitutes the entire understanding between the Parties and supersedes all prior discussions or agreements.  
+- Any amendments must be in writing and signed by both Parties.  
+- If any provision is found invalid or unenforceable, the remaining provisions shall remain in full force.  
+- The Employee acknowledges having read, understood, and accepted all terms herein.
+
+---
+
+**IN WITNESS WHEREOF**, the Parties have executed this Agreement as of the date first written above.
+
+---
+
+**For the Employer:**  
+_________________________  
+Name: [Authorized Signatory Name]  
+Designation: [Designation]  
+Date: _______________  
+
+**Employee:**  
+_________________________  
+Name: [Employee Name]  
+Date: _______________
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 2 — GEN0349
+===========================================================================
+scenario_id: GEN0349
+review_purpose: calibration_strong_sample
+task_type: full_agreement
+screening_tier: strong_screening_candidate
+quality_score_heuristic: 100
+instruction: For a fictional API Developer employed in Delhi, India, draft an illustrative employment agreement with INR 775000 fixed annual salary, a remote work arrangement, 35 scheduled hours per week, 6 months of probation, and 45 days of mutual notice. Include parties, appointment, duties, workplace, salary, probation, working time, leave, applicable statutory benefits, confidentiality, work-related IP, workplace policy, termination, disputes and signatures. Use party and date placeholders. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional API Developer employed in Delhi, India, draft an illustrative employment agreement with INR 775000 fixed annual salary, a remote work arrangement, 35 scheduled hours per week, 6 months of probation, and 45 days of mutual notice. Include parties, appointment, duties, workplace, salary, probation, working time, leave, applicable statutory benefits, confidentiality, work-related IP, workplace policy, termination, disputes and signatures. Use party and date placeholders. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+
+
+GENERATED RESPONSE:
+**EMPLOYMENT AGREEMENT**
+
+This Employment Agreement ("Agreement") is made on [Date], by and between:
+
+**[Employer Name]**, a company incorporated under the laws of India, having its registered office at [Employer Address], Delhi, India  
+(hereinafter referred to as the "Employer")
+
+**AND**
+
+**[Employee Name]**, residing at [Employee Address], Delhi, India  
+(hereinafter referred to as the "Employee")
+
+Collectively referred to as the "Parties".
+
+---
+
+**1. APPOINTMENT**  
+The Employer hereby appoints the Employee as an **API Developer**, and the Employee accepts the appointment, on the terms and conditions set forth in this Agreement, effective from [Start Date] ("Effective Date").
+
+---
+
+**2. DUTIES AND RESPONSIBILITIES**  
+The Employee shall perform duties typical to the role of an API Developer, including but not limited to:  
+- Designing, developing, and maintaining application programming interfaces (APIs);  
+- Collaborating with internal teams to integrate systems and improve functionality;  
+- Troubleshooting and resolving technical issues;  
+- Ensuring compliance with security and performance standards;  
+- Performing any other related tasks as assigned by the Employer from time to time.  
+
+The Employee shall perform these duties diligently, professionally, and in the best interests of the Employer.
+
+---
+
+**3. WORKPLACE**  
+The Employee’s primary place of work shall be **remote**. The Employee shall perform duties from a location of their choice within Delhi, India, provided that work is performed in a secure and professional environment conducive to productivity. The Employer may, at its discretion and with prior notice, require the Employee to attend in-person meetings or work from the Employer’s office in Delhi, subject to applicable laws and mutual agreement.
+
+---
+
+**4. SALARY**  
+The Employee shall receive a fixed annual salary of **INR 775,000 (Indian Rupees Seven Lakh Seventy-Five Thousand Only)**, payable in equal monthly installments in accordance with the Employer’s payroll schedule. This salary is exclusive of any statutory deductions required under applicable law.
+
+---
+
+**5. PROBATION PERIOD**  
+The Employee shall be on probation for a period of **six (6) months** from the Effective Date. During this period, either Party may terminate the employment relationship by providing written notice as specified in Clause 10. Upon satisfactory completion of the probation period, the Employee’s appointment shall be confirmed without the need for a separate confirmation letter, unless otherwise communicated in writing.
+
+---
+
+**6. WORKING TIME**  
+The Employee shall work **thirty-five (35) scheduled hours per week**, distributed over five (5) days as mutually agreed or as per project requirements. The Employee is expected to remain accessible during core business hours and to meet agreed-upon project timelines. Flexibility in scheduling may be permitted, subject to operational needs.
+
+---
+
+**7. LEAVE**  
+The Employee shall be entitled to leave in accordance with applicable statutory provisions under the **Shops and Establishments Act, Delhi**, and any other applicable laws. Leave entitlements, including earned leave, sick leave, and casual leave, shall be granted as per the law and the Employer’s internal policies, subject to documentation and approval procedures.
+
+---
+
+**8. STATUTORY BENEFITS**  
+The Employee shall be entitled to statutory benefits as required under Indian law, including but not limited to:  
+- Provident Fund (PF) contributions under the Employees’ Provident Funds and Miscellaneous Provisions Act, 1952;  
+- Employee State Insurance (ESI), if applicable;  
+- Gratuity under the Payment of Gratuity Act, 1972, upon completion of eligible service;  
+- Any other benefits mandated by applicable central or state legislation.  
+
+The Employer shall comply with all statutory obligations in relation to deductions, contributions, and filings.
+
+---
+
+**9. CONFIDENTIALITY**  
+The Employee shall not, during or after employment, disclose, use, or permit access to any confidential or proprietary information of the Employer, including but not limited to source code, trade secrets, client data, business strategies, and technical documentation, except as required in the course of employment. This obligation shall continue after termination of employment, to the extent permitted by law.
+
+---
+
+**10. INTELLECTUAL PROPERTY**  
+All work product, code, documentation, inventions, and other intellectual property created, developed, or conceived by the Employee during the course of employment, whether solely or jointly, and relating to the Employer’s business, shall be the sole and exclusive property of the Employer. The Employee agrees to execute any documents necessary to vest full ownership in the Employer, as required under applicable law.
+
+---
+
+**11. WORKPLACE POLICIES**  
+The Employee shall comply with all workplace policies, codes of conduct, IT security protocols, and remote work guidelines issued by the Employer from time to time, to the extent communicated and applicable to remote employees.
+
+---
+
+**12. TERMINATION**  
+Either Party may terminate this Agreement by providing **forty-five (45) days** prior written notice to the other Party. In lieu of notice, the Employer may pay salary in lieu of notice, as permitted under applicable law. Termination shall be without prejudice to any rights or remedies available under law for cause, including misconduct or breach of contract.
+
+---
+
+**13. DISPUTE RESOLUTION**  
+Any dispute arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts in **Delhi, India**. The Parties shall endeavor to resolve disputes amicably through mutual discussion before initiating legal proceedings.
+
+---
+
+**14. GOVERNING LAW**  
+This Agreement shall be governed by and construed in accordance with the laws of India, including but not limited to the Indian Contract Act, 1872, and applicable labor laws.
+
+---
+
+**15. MISCELLANEOUS**  
+- This Agreement constitutes the entire understanding between the Parties and supersedes all prior discussions or agreements.  
+- Any amendments must be in writing and signed by both Parties.  
+- If any provision is found invalid, the remainder of the Agreement shall remain in full force.  
+- The headings used herein are for convenience only and do not affect interpretation.
+
+---
+
+**IN WITNESS WHEREOF**, the Parties have executed this Agreement on the date first above written.
+
+**EMPLOYER**  
+[Employer Name]  
+By: ___________________________  
+Name: [Authorized Signatory Name]  
+Designation: [Designation]  
+Date: [Date]  
+Place: Delhi, India
+
+**EMPLOYEE**  
+[Employee Name]  
+Signature: ____________________  
+Date: [Date]  
+Place: Delhi, India
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 3 — GEN0002
+===========================================================================
+scenario_id: GEN0002
+review_purpose: calibration_manual_hold
+task_type: full_agreement
+screening_tier: hold_manual_review
+quality_score_heuristic: 78
+review_reasons: legacy_industrial_disputes_act_reference;notice_in_lieu_applicability_review
+instruction: For a fictional IT Operations Analyst employed in Haryana, India, draft an illustrative employment agreement with INR 2175000 fixed annual salary, a remote work arrangement, 35 scheduled hours per week, 4 months of probation, and 75 days of mutual notice. Include parties, appointment, duties, workplace, salary, probation, working time, leave, applicable statutory benefits, confidentiality, work-related IP, workplace policy, termination, disputes and signatures. Use party and date placeholders. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional IT Operations Analyst employed in Haryana, India, draft an illustrative employment agreement with INR 2175000 fixed annual salary, a remote work arrangement, 35 scheduled hours per week, 4 months of probation, and 75 days of mutual notice. Include parties, appointment, duties, workplace, salary, probation, working time, leave, applicable statutory benefits, confidentiality, work-related IP, workplace policy, termination, disputes and signatures. Use party and date placeholders. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+
+
+GENERATED RESPONSE:
+**EMPLOYMENT AGREEMENT**
+
+This Employment Agreement ("Agreement") is made and entered into on this ___ day of __________, 20__, by and between:
+
+**[Employer Name]**, a company incorporated under the laws of India, having its registered office at [Employer Address], Haryana, India  
+(hereinafter referred to as the "Employer"),
+
+and
+
+**[Employee Name]**, residing at [Employee Address], Haryana, India  
+(hereinafter referred to as the "Employee").
+
+**WHEREAS**, the Employer desires to employ the Employee as an IT Operations Analyst, and the Employee desires to accept such employment, subject to the terms and conditions set forth herein.
+
+NOW, THEREFORE, in consideration of the mutual covenants and promises contained herein, the parties agree as follows:
+
+---
+
+**1. Appointment and Position**  
+The Employer hereby appoints the Employee to the position of **IT Operations Analyst**, and the Employee accepts such appointment, effective from **[Start Date]**. The Employee shall perform the duties and responsibilities customary to this role, including but not limited to monitoring IT systems, troubleshooting operational issues, ensuring system reliability, supporting infrastructure upgrades, and complying with internal reporting protocols.
+
+---
+
+**2. Workplace**  
+The Employee’s primary place of work shall be **remote**, with performance of duties conducted from a location within Haryana, India, as agreed between the parties. The Employee shall ensure a secure, functional, and professional work environment at the remote location and remain accessible during scheduled working hours. The Employer reserves the right to require occasional in-person attendance at a designated office or facility in Haryana, with reasonable prior notice.
+
+---
+
+**3. Fixed Annual Salary**  
+The Employee shall receive a fixed annual salary of **INR 2,175,000 (Indian Rupees Twenty-One Lakh Seventy-Five Thousand Only)**, payable in equal monthly installments in accordance with the Employer’s standard payroll schedule, subject to applicable statutory deductions and withholdings.
+
+---
+
+**4. Probation Period**  
+The Employee shall serve a probationary period of **four (4) months**, commencing on the effective date of employment. During this period, either party may terminate the employment with **thirty (30) days’ written notice** or payment in lieu, without further liability, subject to applicable law. Upon satisfactory completion of the probation period, the Employee’s position shall be confirmed in writing by the Employer.
+
+---
+
+**5. Working Time**  
+The Employee shall render **thirty-five (35) scheduled hours** of work per week, distributed across five (5) working days. The standard working schedule shall be determined in consultation with the Employer, with flexibility to accommodate operational needs. The Employee shall maintain accurate records of work hours as required by company policy and applicable law.
+
+---
+
+**6. Leave Entitlement**  
+The Employee shall be entitled to paid leave in accordance with applicable statutory provisions under the **Haryana Shops and Commercial Establishments Act, 1958**, and other relevant laws, including but not limited to:
+
+- Earned leave as per applicable law  
+- Sick leave as per statutory entitlement  
+- Casual leave as per statutory requirements  
+- Public and festival holidays observed by the Employer
+
+Leave shall be availed with prior approval and in compliance with internal leave procedures.
+
+---
+
+**7. Statutory Benefits**  
+The Employee shall be entitled to statutory benefits as mandated under Indian law, including but not limited to:
+
+- Employees’ Provident Fund (EPF) contributions under the Employees’ Provident Funds and Miscellaneous Provisions Act, 1952  
+- Employees’ State Insurance (ESI), if applicable based on salary threshold and employee count  
+- Gratuity under the Payment of Gratuity Act, 1972, upon completion of eligible service  
+- Other benefits as required by applicable labour laws in Haryana and India
+
+The Employer shall comply with all statutory obligations in relation to deductions, contributions, and filings.
+
+---
+
+**8. Confidentiality**  
+The Employee shall not, during or after employment, disclose or use any confidential information, trade secrets, technical data, business strategies, or client information obtained during employment, except as necessary to perform duties or as authorized in writing by the Employer. This obligation shall continue after termination of employment to the extent permitted by law.
+
+---
+
+**9. Work-Related Intellectual Property**  
+All intellectual property, including but not limited to software code, documentation, system designs, and technical innovations, created by the Employee during the course of employment and relating to the Employer’s business shall be the sole and exclusive property of the Employer. The Employee shall execute any documents necessary to confirm or assign such rights, as required.
+
+---
+
+**10. Workplace Policies**  
+The Employee shall comply with all applicable workplace policies, codes of conduct, IT security protocols, and remote work guidelines issued by the Employer from time to time, including those related to data protection, acceptable use of systems, and professional conduct. These policies shall be made available to the Employee in writing.
+
+---
+
+**11. Termination**  
+Either party may terminate this employment by providing **seventy-five (75) days’ written notice** to the other party. In the event of termination by the Employer without notice, the Employer shall pay the Employee an amount equivalent to seventy-five (75) days of salary in lieu of notice. Termination shall be subject to compliance with applicable labour laws, including any requirements under the Industrial Disputes Act, 1947, if applicable.
+
+---
+
+**12. Dispute Resolution**  
+Any dispute arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the competent courts in Haryana, India. The parties shall make reasonable efforts to resolve disputes amicably through mutual discussion before initiating legal proceedings.
+
+---
+
+**13. Governing Law**  
+This Agreement shall be governed by and construed in accordance with the laws of India, including relevant central and state labour legislation applicable in Haryana.
+
+---
+
+**14. Entire Agreement**  
+This document constitutes the entire understanding between the parties with respect to the subject matter herein and supersedes all prior discussions, representations, or agreements, whether oral or written.
+
+---
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first written above.
+
+**For [Employer Name]**  
+_________________________  
+Name:  
+Designation:  
+Date:  
+
+**Employee**  
+_________________________  
+[Employee Name]  
+Date:  
+
+---  
+*End of Agreement*
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 4 — GEN0035
+===========================================================================
+scenario_id: GEN0035
+review_purpose: calibration_manual_hold
+task_type: full_agreement
+screening_tier: hold_manual_review
+quality_score_heuristic: 82
+review_reasons: legacy_industrial_disputes_act_reference
+instruction: For a fictional MLOps Specialist employed in Gujarat, India, draft an illustrative employment agreement with INR 1900000 fixed annual salary, a hybrid work arrangement, 42 scheduled hours per week, 3 months of probation, and 45 days of mutual notice. Include parties, appointment, duties, workplace, salary, probation, working time, leave, applicable statutory benefits, confidentiality, work-related IP, workplace policy, termination, disputes and signatures. Use party and date placeholders. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional MLOps Specialist employed in Gujarat, India, draft an illustrative employment agreement with INR 1900000 fixed annual salary, a hybrid work arrangement, 42 scheduled hours per week, 3 months of probation, and 45 days of mutual notice. Include parties, appointment, duties, workplace, salary, probation, working time, leave, applicable statutory benefits, confidentiality, work-related IP, workplace policy, termination, disputes and signatures. Use party and date placeholders. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+
+
+GENERATED RESPONSE:
+**EMPLOYMENT AGREEMENT**
+
+This Employment Agreement ("Agreement") is made and entered into on [DATE], by and between:
+
+**[EMPLOYER NAME]**, a company incorporated under the laws of India, having its registered office at [EMPLOYER ADDRESS], Gujarat, India  
+(hereinafter referred to as the "Employer")
+
+**AND**
+
+**[EMPLOYEE NAME]**, residing at [EMPLOYEE ADDRESS], Gujarat, India  
+(hereinafter referred to as the "Employee")
+
+Collectively referred to as the "Parties".
+
+---
+
+**1. APPOINTMENT**  
+The Employer hereby appoints the Employee, and the Newton agrees to accept appointment, as a **MLOps Specialist**, effective from [START DATE], subject to the terms and conditions set forth in this Agreement and applicable laws.
+
+---
+
+**2. DUTIES AND RESPONSIBILITIES**  
+The Employee shall perform duties typical of an MLOps Specialist, including but not limited to:  
+- Designing, deploying, and maintaining machine learning pipelines and infrastructure;  
+- Monitoring and optimizing model performance and system reliability;  
+- Collaborating with data scientists and software engineers to integrate models into production environments;  
+- Ensuring compliance with data governance, security, and scalability standards;  
+- Supporting continuous integration and delivery (CI/CD) for ML workflows.  
+
+The Employee shall report to the designated manager or supervisor and perform such other lawful duties as may be assigned from time to time.
+
+---
+
+**3. WORKPLACE**  
+The Employee’s primary place of work shall be [OFFICE LOCATION, e.g., Ahmedabad, Gujarat]. The Employee shall work under a **hybrid work arrangement**, pursuant to which the Employee may perform duties remotely for part of the week, subject to operational requirements and the Employer’s internal hybrid work policy. The Employer reserves the right to modify the hybrid work schedule with reasonable notice, in accordance with business needs and applicable law.
+
+---
+
+**4. SALARY**  
+The Employee shall receive a fixed annual salary of **INR 1,900,000 (One Million Nine Hundred Thousand Indian Rupees)**, payable in equal monthly installments in accordance with the Employer’s standard payroll practices. This salary is exclusive of any statutory deductions and subject to applicable taxes and withholdings as required by law.
+
+---
+
+**5. PROBATION**  
+The Employee shall be on probation for a period of **three (3) months** from the date of joining. During this period, the Employer shall assess the Employee’s performance, conduct, and suitability for the role. Upon successful completion of the probation period, the Employee’s appointment shall be confirmed without the need for a separate confirmation letter, unless otherwise communicated. The Employer may extend the probation period by up to one additional month with written notice.
+
+---
+
+**6. WORKING TIME**  
+The Employee is expected to work **forty-two (42) scheduled hours per week**, distributed over five (5) or six (6) working days as per the Employer’s standard workweek. The Employee shall adhere to the Employer’s working hours, attendance policies, and any reasonable adjustments communicated in writing.
+
+---
+
+**7. LEAVE**  
+The Employee shall be entitled to paid leave in accordance with the applicable provisions of the **Factories Act, 1948**, or other relevant statutes, as applicable, including:  
+- Earned leave,  
+- Sick leave,  
+- Casual leave,  
+- Public holidays,  
+- Maternity/paternity leave (as per applicable law).  
+
+Leave entitlements and procedures shall be governed by the Employer’s leave policy, which is subject to change in compliance with statutory requirements.
+
+---
+
+**8. STATUTORY BENEFITS**  
+The Employee shall be entitled to statutory benefits as mandated under Indian law, including but not limited to:  
+- Provident Fund (PF) contributions under the Employees’ Provident Funds and Miscellaneous Provisions Act, 1952;  
+- Employees’ State Insurance (ESI), if applicable;  
+- Gratuity under the Payment of Gratuity Act, 1972, upon completion of eligible service;  
+- Any other benefits as required by law.  
+
+The Employer shall comply with all statutory obligations in relation to deductions, contributions, and filings.
+
+---
+
+**9. CONFIDENTIALITY**  
+The Employee shall not, during or after employment, disclose or use any confidential information, trade secrets, business strategies, technical data, source code, client information, or proprietary systems of the Employer, except as required in the course of employment or as authorized in writing. This obligation shall continue indefinitely after termination of employment.
+
+---
+
+**10. WORK-RELATED INTELLECTUAL PROPERTY**  
+All intellectual property, including but not limited to software, models, algorithms, documentation, and inventions, created by the Employee during the course of employment and relating to the Employer’s business or using the Employer’s resources, shall be the sole and exclusive property of the Employer. The Employee agrees to execute any documents necessary to assign or confirm such rights to the Employer.
+
+---
+
+**11. WORKPLACE POLICIES**  
+The Employee shall comply with all applicable workplace policies, codes of conduct, IT security protocols, data protection guidelines, and other internal rules as issued by the Employer from time to time. The Employee acknowledges receipt and understanding of such policies, including those related to data privacy, anti-harassment, and remote work.
+
+---
+
+**12. TERMINATION**  
+Either Party may terminate this Agreement by providing **forty-five (45) days** of prior written notice to the other Party. During the notice period, the Employee shall continue to perform duties unless otherwise directed. The Employer reserves the right to pay salary in lieu of notice, subject to applicable law. Termination shall also be subject to the terms of any applicable employment laws, including the Industrial Disputes Act, 1947, if applicable.
+
+---
+
+**13. DISPUTE RESOLUTION**  
+Any dispute arising out of or in connection with this Agreement shall be resolved first through mutual discussion. If unresolved, the dispute shall be subject to the **exclusive jurisdiction of the competent courts in Gujarat, India**. The Parties agree that this Agreement shall be governed by and construed in accordance with the laws of India.
+
+---
+
+**14. MISCELLANEOUS**  
+- This Agreement constitutes the entire understanding between the Parties and supersedes all prior discussions or agreements.  
+- Amendments must be in writing and signed by both Parties.  
+- If any provision is found invalid, the remainder shall remain in full force.  
+- The Employee shall not assign duties; the Employer may assign this Agreement.  
+- This Agreement is subject to compliance with all applicable laws and regulations.
+
+---
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the date first written above.
+
+**[EMPLOYER NAME]**  
+By: _________________________  
+Name: [AUTHORIZED SIGNATORY NAME]  
+Title: [TITLE]  
+Date: [DATE]  
+Place: [CITY], Gujarat  
+
+**[EMPLOYEE NAME]**  
+Signature: _________________________  
+Name: [EMPLOYEE NAME]  
+Date: [DATE]  
+Place: [CITY], Gujarat  
+
+---  
+*End of Agreement*
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 5 — GEN0260
+===========================================================================
+scenario_id: GEN0260
+review_purpose: calibration_strong_sample
+task_type: clause_drafting
+screening_tier: strong_screening_candidate
+quality_score_heuristic: 100
+instruction: For a fictional Automation Engineer employed in Telangana, India, draft a contractual annual leave clause with 20 days, subject to any greater legal entitlement. Return only the requested clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Automation Engineer employed in Telangana, India, draft a contractual annual leave clause with 20 days, subject to any greater legal entitlement. Return only the requested clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+
+
+GENERATED RESPONSE:
+The Employee shall be entitled to twenty (20) working days of paid annual leave per calendar year, in accordance with the applicable provisions of the Telangana Shops and Establishments Act and any other applicable law, whichever provides a greater entitlement. The availing of annual leave shall be subject to operational requirements and prior approval by the Employer, and shall be granted in compliance with company policy and statutory requirements.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 6 — GEN0151
+===========================================================================
+scenario_id: GEN0151
+review_purpose: calibration_strong_sample
+task_type: clause_drafting
+screening_tier: strong_screening_candidate
+quality_score_heuristic: 100
+instruction: For a fictional Product Engineer employed in Delhi, India, draft a contractual annual leave clause with 20 days, subject to any greater legal entitlement. Return only the requested clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Product Engineer employed in Delhi, India, draft a contractual annual leave clause with 20 days, subject to any greater legal entitlement. Return only the requested clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+
+
+GENERATED RESPONSE:
+The Employee shall be entitled to twenty (20) calendar days of paid annual leave per calendar year, in addition to public holidays observed in Delhi, subject to any greater entitlement conferred by applicable law, rules, or regulations from time to time in force. The accrual, carry-forward, and availing of leave shall be governed by the Company’s leave policy and applicable statutory provisions.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 7 — GEN0345
+===========================================================================
+scenario_id: GEN0345
+review_purpose: calibration_manual_hold
+task_type: clause_drafting
+screening_tier: hold_manual_review
+quality_score_heuristic: 82
+review_reasons: legacy_industrial_disputes_act_reference
+instruction: For a fictional IT Operations Analyst employed in Delhi, India, draft a grievance-reporting clause with non-retaliation protections. Return only the requested clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional IT Operations Analyst employed in Delhi, India, draft a grievance-reporting clause with non-retaliation protections. Return only the requested clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+
+
+GENERATED RESPONSE:
+**Grievance Reporting and Non-Retaliation Clause**
+
+The Employee shall have the right to report any workplace grievance, including but not limited to issues relating to working conditions, safety, discrimination, harassment, or violation of company policies or applicable laws, through the designated internal grievance redressal mechanism of the Employer. Such grievance may be raised in writing to the immediate supervisor, Human Resources Department, or through any official channel established by the Employer for this purpose.
+
+The Employer shall ensure that no adverse action, retaliation, intimidation, or discrimination shall be taken against the Employee for reporting a grievance in good faith, whether such report is made internally or to any appropriate statutory authority, as permitted under applicable law. Any allegation of retaliation will be promptly investigated, and appropriate corrective measures will be taken if warranted.
+
+All grievances will be treated with reasonable confidentiality to the extent possible under the circumstances and in accordance with applicable legal requirements. The Employee shall cooperate in any investigation conducted pursuant to a reported grievance.
+
+This clause is governed by and subject to the provisions of applicable Indian laws, including the Industrial Disputes Act, 1947, and any other relevant statutory framework from time to time in force.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 8 — GEN0357
+===========================================================================
+scenario_id: GEN0357
+review_purpose: calibration_manual_hold
+task_type: clause_drafting
+screening_tier: hold_manual_review
+quality_score_heuristic: 82
+review_reasons: legacy_industrial_disputes_act_reference
+instruction: For a fictional Release Engineer employed in West Bengal, India, draft a grievance-reporting clause with non-retaliation protections. Return only the requested clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Release Engineer employed in West Bengal, India, draft a grievance-reporting clause with non-retaliation protections. Return only the requested clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+
+
+GENERATED RESPONSE:
+**Grievance Reporting and Non-Retaliation Clause**
+
+The Employee shall have the right to report grievances related to employment, workplace conditions, or violations of company policies or applicable laws without fear of retaliation. Any such grievances may be raised in writing to the designated Grievance Redressal Officer or through established internal channels, in accordance with the provisions of the Industrial Disputes Act, 1947, and other applicable laws. The Company shall ensure that no adverse action, including but not limited to demotion, suspension, termination, reduction in responsibilities, or any form of discrimination or harassment, shall be taken against the Employee for reporting a grievance in good faith. If a grievance pertains to retaliation for a prior complaint, it shall be escalated to a senior management authority independent of the subject matter. All grievances shall be investigated promptly, fairly, and confidentially to the extent possible, and the Employee shall be informed of the outcome within a reasonable timeframe. Protection under this clause applies regardless of whether the reported issue is ultimately substantiated, provided the report was made in good faith. This clause shall be interpreted and enforced in accordance with applicable Indian laws, including constitutional safeguards and statutory protections against victimization.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 9 — GEN0054
+===========================================================================
+scenario_id: GEN0054
+review_purpose: calibration_strong_sample
+task_type: contract_customization
+screening_tier: strong_screening_candidate
+quality_score_heuristic: 100
+instruction: For a fictional Business Systems Analyst employed in Tamil Nadu, India, change only the annual fixed salary to INR 725000 in the supplied fictional clause; preserve all unrelated conditions. Return only the revised clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The Business Systems Analyst will receive INR 625000 annually as fixed salary.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Business Systems Analyst employed in Tamil Nadu, India, change only the annual fixed salary to INR 725000 in the supplied fictional clause; preserve all unrelated conditions. Return only the revised clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The Business Systems Analyst will receive INR 625000 annually as fixed salary.
+
+GENERATED RESPONSE:
+The Business Systems Analyst will receive INR 725000 annually as fixed salary.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 10 — GEN0108
+===========================================================================
+scenario_id: GEN0108
+review_purpose: calibration_strong_sample
+task_type: contract_customization
+screening_tier: strong_screening_candidate
+quality_score_heuristic: 100
+instruction: For a fictional Product Engineer employed in West Bengal, India, change the work arrangement to hybrid in the supplied fictional clause; preserve all unrelated conditions. Return only the revised clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The Product Engineer will work on-site at the employer office on all scheduled working days.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Product Engineer employed in West Bengal, India, change the work arrangement to hybrid in the supplied fictional clause; preserve all unrelated conditions. Return only the revised clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The Product Engineer will work on-site at the employer office on all scheduled working days.
+
+GENERATED RESPONSE:
+The Product Engineer will work in a hybrid arrangement, splitting time between the employer's office and an approved remote location, as per the employer's hybrid work policy, while remaining subject to applicable law.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 11 — GEN0281
+===========================================================================
+scenario_id: GEN0281
+review_purpose: calibration_manual_hold
+task_type: contract_customization
+screening_tier: hold_manual_review
+quality_score_heuristic: 97
+review_reasons: identical_response_other_scenario
+instruction: For a fictional UI Engineer employed in Karnataka, India, change the mutual notice period to 30 days in the supplied fictional clause; preserve all unrelated conditions. Return only the revised clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: Either party may terminate with 45 days of prior written notice, subject to law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional UI Engineer employed in Karnataka, India, change the mutual notice period to 30 days in the supplied fictional clause; preserve all unrelated conditions. Return only the revised clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+Either party may terminate with 45 days of prior written notice, subject to law.
+
+GENERATED RESPONSE:
+Either party may terminate with 30 days of prior written notice, subject to law.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 12 — GEN0088
+===========================================================================
+scenario_id: GEN0088
+review_purpose: calibration_manual_hold
+task_type: contract_customization
+screening_tier: hold_manual_review
+quality_score_heuristic: 97
+review_reasons: identical_response_other_scenario
+instruction: For a fictional IT Operations Analyst employed in Odisha, India, change the mutual notice period to 60 days in the supplied fictional clause; preserve all unrelated conditions. Return only the revised clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: Either party may terminate with 75 days of prior written notice, subject to law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional IT Operations Analyst employed in Odisha, India, change the mutual notice period to 60 days in the supplied fictional clause; preserve all unrelated conditions. Return only the revised clause. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+Either party may terminate with 75 days of prior written notice, subject to law.
+
+GENERATED RESPONSE:
+Either party may terminate with 60 days of prior written notice, subject to law.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 13 — GEN0065
+===========================================================================
+scenario_id: GEN0065
+review_purpose: calibration_strong_sample
+task_type: contradiction_correction
+screening_tier: strong_screening_candidate
+quality_score_heuristic: 100
+instruction: For a fictional API Developer employed in Telangana, India, correct the inconsistency in the supplied fictional text. Use 2 months consistently. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The API Developer has a probation period of 2 months. The next paragraph says 4 months.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional API Developer employed in Telangana, India, correct the inconsistency in the supplied fictional text. Use 2 months consistently. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The API Developer has a probation period of 2 months. The next paragraph says 4 months.
+
+GENERATED RESPONSE:
+The probation period for the API Developer shall be 2 months. This period shall be subject to applicable laws and company policies.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 14 — GEN0014
+===========================================================================
+scenario_id: GEN0014
+review_purpose: calibration_strong_sample
+task_type: contradiction_correction
+screening_tier: strong_screening_candidate
+quality_score_heuristic: 100
+instruction: For a fictional Business Systems Analyst employed in West Bengal, India, correct the inconsistency in the supplied fictional text. Use INR 1900000 consistently. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The Business Systems Analyst receives annual pay of INR 1900000. The annual pay is also described as INR 2000000.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Business Systems Analyst employed in West Bengal, India, correct the inconsistency in the supplied fictional text. Use INR 1900000 consistently. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The Business Systems Analyst receives annual pay of INR 1900000. The annual pay is also described as INR 2000000.
+
+GENERATED RESPONSE:
+The Business Systems Analyst receives annual pay of INR 1900000.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 15 — GEN0169
+===========================================================================
+scenario_id: GEN0169
+review_purpose: calibration_manual_hold
+task_type: contradiction_correction
+screening_tier: hold_manual_review
+quality_score_heuristic: 88
+review_reasons: audit_hard_check:contradictory_hours_retained
+instruction: For a fictional Infrastructure Engineer employed in Punjab, India, correct the inconsistency in the supplied fictional text. Use 38 scheduled hours consistently. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The scheduled work week is 38 hours. The next clause calls the standard schedule 48 hours.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Infrastructure Engineer employed in Punjab, India, correct the inconsistency in the supplied fictional text. Use 38 scheduled hours consistently. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The scheduled work week is 38 hours. The next clause calls the standard schedule 48 hours.
+
+GENERATED RESPONSE:
+The scheduled work week is 38 hours, in accordance with applicable labor laws. All references to a 48-hour work week are hereby corrected to 38 hours.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 16 — GEN0308
+===========================================================================
+scenario_id: GEN0308
+review_purpose: calibration_manual_hold
+task_type: contradiction_correction
+screening_tier: hold_manual_review
+quality_score_heuristic: 88
+review_reasons: audit_hard_check:contradictory_salary_retained
+instruction: For a fictional Cloud Security Engineer employed in Karnataka, India, correct the inconsistency in the supplied fictional text. Use INR 1925000 consistently. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The Cloud Security Engineer receives annual pay of INR 1925000. The annual pay is also described as INR 2025000.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Cloud Security Engineer employed in Karnataka, India, correct the inconsistency in the supplied fictional text. Use INR 1925000 consistently. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The Cloud Security Engineer receives annual pay of INR 1925000. The annual pay is also described as INR 2025000.
+
+GENERATED RESPONSE:
+The Cloud Security Engineer receives an annual pay of INR 1925000. This amount shall be paid in equal monthly installments, subject to applicable deductions as required by law. All references to INR 2025000 in this agreement shall be deemed corrected to INR 1925000.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 17 — GEN0153
+===========================================================================
+scenario_id: GEN0153
+review_purpose: calibration_strong_sample
+task_type: missing_clause_completion
+screening_tier: strong_screening_candidate
+quality_score_heuristic: 100
+instruction: For a fictional Data Quality Specialist employed in Delhi, India, Complete only the appointment provision, using joining-date placeholders for the supplied outline. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: Outline: Data Quality Specialist; Delhi; salary INR 1475000; on-site work. The appointment clause is missing.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Data Quality Specialist employed in Delhi, India, Complete only the appointment provision, using joining-date placeholders for the supplied outline. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+Outline: Data Quality Specialist; Delhi; salary INR 1475000; on-site work. The appointment clause is missing.
+
+GENERATED RESPONSE:
+This Appointment is effective from the date of joining of the Employee, which shall be the commencement date of the employment relationship ("Joining Date"). The Employee shall assume the role of Data Quality Specialist with immediate effect upon joining, based at the Company’s office in Delhi, India, and shall perform the duties and responsibilities associated with the position as directed from time to time by the Company. The Employee’s appointment shall be subject to the terms and conditions of employment as governed by applicable labor laws and regulations in India.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 18 — GEN0075
+===========================================================================
+scenario_id: GEN0075
+review_purpose: calibration_strong_sample
+task_type: missing_clause_completion
+screening_tier: strong_screening_candidate
+quality_score_heuristic: 100
+instruction: For a fictional Data Quality Specialist employed in Kerala, India, Complete only the probation provision using 3 months for the supplied outline. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: Outline: Data Quality Specialist; Kerala; salary INR 1500000; on-site work. The probation clause is missing.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Data Quality Specialist employed in Kerala, India, Complete only the probation provision using 3 months for the supplied outline. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+Outline: Data Quality Specialist; Kerala; salary INR 1500000; on-site work. The probation clause is missing.
+
+GENERATED RESPONSE:
+Probation Clause:  
+The Employee shall be placed on a probationary period of three (3) months from the date of commencement of employment. During this period, the Employee’s performance, competence, and suitability for the role of Data Quality Specialist shall be assessed. The Company reserves the right, at its sole discretion, to extend the probationary period by an additional period of up to one (1) month or to terminate the employment during or at the end of the probation period without assigning any reason, subject to applicable laws and regulations in force in the State of Kerala and the Republic of India. Upon satisfactory completion of the probation period, the Employee shall be confirmed in the role, subject to the terms and conditions governing such confirmation as per Company policy and applicable law.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 19 — GEN0389
+===========================================================================
+scenario_id: GEN0389
+review_purpose: calibration_manual_hold
+task_type: missing_clause_completion
+screening_tier: hold_manual_review
+quality_score_heuristic: 82
+review_reasons: legacy_industrial_disputes_act_reference
+instruction: For a fictional UI Engineer employed in Karnataka, India, Complete only the mutual notice provision using 75 days, subject to applicable law for the supplied outline. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: Outline: UI Engineer; Karnataka; salary INR 800000; on-site work. The termination-notice clause is missing.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional UI Engineer employed in Karnataka, India, Complete only the mutual notice provision using 75 days, subject to applicable law for the supplied outline. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+Outline: UI Engineer; Karnataka; salary INR 800000; on-site work. The termination-notice clause is missing.
+
+GENERATED RESPONSE:
+In the event of termination of employment, either party shall provide the other with a minimum of seventy-five (75) days’ prior written notice, or such longer period as may be required under applicable law. This provision shall be subject to the provisions of the Industrial Disputes Act, 1947, and any other applicable statutory requirements governing notice periods in force from time to time in the State of Karnataka, India.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 20 — GEN0319
+===========================================================================
+scenario_id: GEN0319
+review_purpose: calibration_manual_hold
+task_type: missing_clause_completion
+screening_tier: hold_manual_review
+quality_score_heuristic: 82
+review_reasons: legacy_industrial_disputes_act_reference
+instruction: For a fictional Automation Engineer employed in Maharashtra, India, Complete only the mutual notice provision using 75 days, subject to applicable law for the supplied outline. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: Outline: Automation Engineer; Maharashtra; salary INR 2125000; remote work. The termination-notice clause is missing.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Automation Engineer employed in Maharashtra, India, Complete only the mutual notice provision using 75 days, subject to applicable law for the supplied outline. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+Outline: Automation Engineer; Maharashtra; salary INR 2125000; remote work. The termination-notice clause is missing.
+
+GENERATED RESPONSE:
+The Parties shall provide each other a notice period of seventy-five (75) days for termination of employment, as permitted under applicable law. This notice period shall be in accordance with the provisions of the Industrial Disputes Act, 1947, and any other applicable statutory regulations governing employment in the State of Maharashtra, India. In the event of termination without serving the full notice period, the applicable statutory dues shall be paid in lieu of notice, as determined by law.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 21 — GEN0037
+===========================================================================
+scenario_id: GEN0037
+review_purpose: verify_provisional_exclusion
+task_type: contradiction_correction
+screening_tier: exclude_provisional
+quality_score_heuristic: 100
+hard_failure_reasons: contradictory_role_retained
+instruction: For a fictional Infrastructure Engineer employed in Karnataka, India, correct the inconsistency in the supplied fictional text. Make the role consistently Infrastructure Engineer. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The employee is appointed as Infrastructure Engineer. A later provision mistakenly describes the role as Sales Executive.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Infrastructure Engineer employed in Karnataka, India, correct the inconsistency in the supplied fictional text. Make the role consistently Infrastructure Engineer. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The employee is appointed as Infrastructure Engineer. A later provision mistakenly describes the role as Sales Executive.
+
+GENERATED RESPONSE:
+The employee is appointed as Infrastructure Engineer. The role of the employee shall be that of an Infrastructure Engineer, and any reference to a different designation, such as "Sales Executive", shall be deemed an error and corrected to "Infrastructure Engineer".
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 22 — GEN0077
+===========================================================================
+scenario_id: GEN0077
+review_purpose: verify_provisional_exclusion
+task_type: full_agreement
+screening_tier: exclude_provisional
+quality_score_heuristic: 0
+hard_failure_reasons: full_agreement_unusually_short;incomplete_full_agreement
+review_reasons: audit_hard_check:notice_days_not_detected;audit_hard_check:probation_months_not_detected;audit_hard_check:salary_not_detected;audit_hard_check:scheduled_weekly_hours_not_detected;audit_hard_check:work_mode_not_detected;execution_section_review;keyword_coverage_review:salary,probation,confidential,termination;numbered_structure_review;scenario_notice_days_not_present;scenario_probation_months_not_present;scenario_salary_not_present;scenario_scheduled_weekly_hours_not_present
+instruction: For a fictional Application Developer employed in Maharashtra, India, draft an illustrative employment agreement with INR 1600000 fixed annual salary, a remote work arrangement, 40 scheduled hours per week, 5 months of probation, and 45 days of mutual notice. Include parties, appointment, duties, workplace, salary, probation, working time, leave, applicable statutory benefits, confidentiality, work-related IP, workplace policy, termination, disputes and signatures. Use party and date placeholders. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Application Developer employed in Maharashtra, India, draft an illustrative employment agreement with INR 1600000 fixed annual salary, a remote work arrangement, 40 scheduled hours per week, 5 months of probation, and 45 days of mutual notice. Include parties, appointment, duties, workplace, salary, probation, working time, leave, applicable statutory benefits, confidentiality, work-related IP, workplace policy, termination, disputes and signatures. Use party and date placeholders. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+
+
+GENERATED RESPONSE:
+**EMPLOYMENT AGREEMENT**
+
+This Employment Agreement ("Agreement") is made on [Date]  
+
+**BETWEEN**  
+
+[Employer Name], a company incorporated under the laws of India, having its registered office at [Employer Address] (hereinafter referred to as the "Employer"),  
+
+**AND**  
+
+[Employee Name], residing at [Employee Address] (hereinafter referred to as the "Employee").  
+
+The Employer and the Employee are collectively referred to as the "Parties" and individually as a "Party."
+
+---
+
+**1. APPOINTMENT**  
+The Employer hereby appoints the Employee to the position of Application Developer, and the Employee accepts such appointment, subject to the terms and conditions set forth in this Agreement.
+
+---
+
+**2. DUTIES AND RESPONSIBILITIES**  
+The Employee shall perform duties and responsibilities customary to the role of an Application Developer, including but not limited to designing, developing, testing, and maintaining software applications. The Employee shall report to the designated supervisor or manager and perform such other tasks as may be assigned from time to游戏副本
+
+[Employee Name]  
+(Signature)  
+
+**Date**: [Date]
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 23 — GEN0232
+===========================================================================
+scenario_id: GEN0232
+review_purpose: verify_provisional_exclusion
+task_type: contradiction_correction
+screening_tier: exclude_provisional
+quality_score_heuristic: 100
+hard_failure_reasons: contradictory_role_retained
+instruction: For a fictional Release Engineer employed in Gujarat, India, correct the inconsistency in the supplied fictional text. Make the role consistently Release Engineer. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The employee is appointed as Release Engineer. A later provision mistakenly describes the role as Sales Executive.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Release Engineer employed in Gujarat, India, correct the inconsistency in the supplied fictional text. Make the role consistently Release Engineer. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The employee is appointed as Release Engineer. A later provision mistakenly describes the role as Sales Executive.
+
+GENERATED RESPONSE:
+The employee is appointed as Release Engineer. The role shall consistently be designated as Release Engineer throughout the employment contract. Any reference to a different position, including but not limited to "Sales Executive," is hereby corrected to "Release Engineer." The duties, responsibilities, and reporting structure shall align with the role of Release Engineer, subject to applicable employment laws in Gujarat, India.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 24 — GEN0265
+===========================================================================
+scenario_id: GEN0265
+review_purpose: verify_provisional_exclusion
+task_type: contradiction_correction
+screening_tier: exclude_provisional
+quality_score_heuristic: 100
+hard_failure_reasons: contradictory_role_retained
+instruction: For a fictional Business Systems Analyst employed in Maharashtra, India, correct the inconsistency in the supplied fictional text. Make the role consistently Business Systems Analyst. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The employee is appointed as Business Systems Analyst. A later provision mistakenly describes the role as Sales Executive.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Business Systems Analyst employed in Maharashtra, India, correct the inconsistency in the supplied fictional text. Make the role consistently Business Systems Analyst. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The employee is appointed as Business Systems Analyst. A later provision mistakenly describes the role as Sales Executive.
+
+GENERATED RESPONSE:
+The employee is appointed as Business Systems Analyst. All references to the role of Sales Executive in this agreement shall be construed as Business Systems Analyst.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 25 — GEN0272
+===========================================================================
+scenario_id: GEN0272
+review_purpose: verify_provisional_exclusion
+task_type: contradiction_correction
+screening_tier: exclude_provisional
+quality_score_heuristic: 100
+hard_failure_reasons: contradictory_role_retained
+instruction: For a fictional Systems Developer employed in Haryana, India, correct the inconsistency in the supplied fictional text. Make the role consistently Systems Developer. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The employee is appointed as Systems Developer. A later provision mistakenly describes the role as Sales Executive.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Systems Developer employed in Haryana, India, correct the inconsistency in the supplied fictional text. Make the role consistently Systems Developer. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The employee is appointed as Systems Developer. A later provision mistakenly describes the role as Sales Executive.
+
+GENERATED RESPONSE:
+The employee is appointed as Systems Developer. All references to the role of Sales Executive are hereby corrected to Systems Developer. The employee shall perform duties and responsibilities associated with the position of Systems Developer, in accordance with applicable laws and the terms of this agreement.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 26 — GEN0321
+===========================================================================
+scenario_id: GEN0321
+review_purpose: verify_provisional_exclusion
+task_type: contradiction_correction
+screening_tier: exclude_provisional
+quality_score_heuristic: 100
+hard_failure_reasons: contradictory_role_retained
+instruction: For a fictional Data Quality Specialist employed in Odisha, India, correct the inconsistency in the supplied fictional text. Make the role consistently Data Quality Specialist. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The employee is appointed as Data Quality Specialist. A later provision mistakenly describes the role as Sales Executive.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional Data Quality Specialist employed in Odisha, India, correct the inconsistency in the supplied fictional text. Make the role consistently Data Quality Specialist. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The employee is appointed as Data Quality Specialist. A later provision mistakenly describes the role as Sales Executive.
+
+GENERATED RESPONSE:
+The employee is appointed as Data Quality Specialist. The role shall consistently be referred to as Data Quality Specialist throughout the contract, and any reference to Sales Executive is hereby corrected to Data Quality Specialist.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?
+
+
+===========================================================================
+REVIEW ITEM 27 — GEN0323
+===========================================================================
+scenario_id: GEN0323
+review_purpose: verify_provisional_exclusion
+task_type: contradiction_correction
+screening_tier: exclude_provisional
+quality_score_heuristic: 100
+hard_failure_reasons: contradictory_role_retained
+instruction: For a fictional IT Operations Analyst employed in Haryana, India, correct the inconsistency in the supplied fictional text. Make the role consistently IT Operations Analyst. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+input: The employee is appointed as IT Operations Analyst. A later provision mistakenly describes the role as Sales Executive.
+legal_review_status: pending
+approved_for_training: false
+
+INSTRUCTION:
+For a fictional IT Operations Analyst employed in Haryana, India, correct the inconsistency in the supplied fictional text. Make the role consistently IT Operations Analyst. Return the corrected clause or clauses only. Do not invent legal rates, extra payment amounts, or post-employment non-competes; make contractual terms subject to applicable law.
+
+INPUT:
+The employee is appointed as IT Operations Analyst. A later provision mistakenly describes the role as Sales Executive.
+
+GENERATED RESPONSE:
+The employee is appointed as IT Operations Analyst. The role of Sales Executive mentioned in a subsequent provision is hereby corrected to IT Operations Analyst to maintain consistency throughout the agreement. All references to the employee’s role shall be construed as IT Operations Analyst, in accordance with the terms of this employment contract and subject to applicable law.
+
+REVIEW QUESTIONS:
+Are the requested facts preserved?
+Is the response complete for its task?
+Are there unsupported or contradictory terms?
+Does it contain questionable legal references?
+Does the screening tier appear appropriate?

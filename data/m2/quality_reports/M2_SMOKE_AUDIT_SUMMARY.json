@@ -1,0 +1,11 @@
+{
+  "total_generated": 5,
+  "status_counts": {
+    "automated_checks_passed": 4,
+    "needs_manual_review": 1
+  },
+  "average_keyword_section_count": 15.0,
+  "human_legally_verified": 0,
+  "training_approved": 0,
+  "caution": "Heuristic checks are not sufficient for legal verification. Missing checks may also reflect different wording."
+}
