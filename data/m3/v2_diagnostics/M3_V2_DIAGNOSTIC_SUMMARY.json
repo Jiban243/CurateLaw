@@ -1,0 +1,50 @@
+{
+  "full_agreements": 120,
+  "v1_tiers": {
+    "hold_manual_review": 36,
+    "strong_screening_candidate": 83,
+    "exclude_provisional": 1
+  },
+  "v2_tiers": {
+    "hold_manual_review": 88,
+    "exclude_provisional": 18,
+    "strong_screening_candidate": 14
+  },
+  "changed_tiers": 73,
+  "curated_full_agreement_target": 45,
+  "provisional_strong_shortfall": 31,
+  "reason_counts": {
+    "hard": {
+      "numeric_written_salary_disagree": 6,
+      "notice_cross_reference_points_to_other_section": 11,
+      "incomplete_full_agreement": 1
+    },
+    "review": {
+      "employer_only_notice_pay_option_review": 49,
+      "probation_notice_exception_requires_review": 64,
+      "unrequested_probation_extension": 23,
+      "nonparty_accepts_appointment_possible_text_corruption": 1,
+      "insufficient_detectable_numbered_sections": 1,
+      "required_notice_days_missing": 1,
+      "required_probation_months_missing": 1,
+      "required_salary_missing": 1,
+      "required_scheduled_weekly_hours_missing": 1,
+      "execution_block_check": 1
+    },
+    "legal": {
+      "historical_industrial_disputes_act_reference": 12
+    }
+  },
+  "single_blocker_counts": {
+    "review:probation_notice_exception_requires_review": 29,
+    "legal:historical_industrial_disputes_act_reference": 4,
+    "review:unrequested_probation_extension": 5,
+    "hard:notice_cross_reference_points_to_other_section": 3,
+    "review:employer_only_notice_pay_option_review": 12
+  },
+  "frozen_raw_sha256": "ec94fba3a90b3cd9853b42ac9365154aa54f5973e183f2e06ca2895b127b466b",
+  "v1_sha256": "0e6cd151559554770293c3b1dfe814c460c3d9ab36a784c2a60c007d18c9ba6e",
+  "v2_sha256": "5dbeba8b04aff664bc37e0ebf83f178555244a83f8a7a91051f89ffd0cdc0032",
+  "calibration_sha256": "58bf74302bc62d3e5759a02280708f3bc8efaf182c3bec34f1688586388ceaab",
+  "training_approved": false
+}

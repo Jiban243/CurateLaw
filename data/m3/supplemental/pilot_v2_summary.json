@@ -1,0 +1,20 @@
+{
+  "pilot_count": 5,
+  "generation_prompt_version": "m3_guarded_full_v1",
+  "status_counts": {
+    "HOLD_FOR_MANUAL_REVIEW": 2,
+    "PROVISIONAL_STRONG_AWAITING_REVIEW": 3
+  },
+  "provisional_strong_ids": [
+    "SUP0002",
+    "SUP0004",
+    "SUP0005"
+  ],
+  "manual_review_ids": [
+    "SUP0001",
+    "SUP0003"
+  ],
+  "training_approved": false,
+  "source_sha256": "8de6fc911e7fe556f1165d16fb8e076837834c7fb59a18d966f565b1fe82f549",
+  "note": "Automated checks are preliminary. Neither V2 screening nor this pilot establishes legal correctness or training eligibility."
+}

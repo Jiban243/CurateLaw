@@ -1,0 +1,46 @@
+{
+  "status": "CALIBRATION_COMPLETE_TRAINING_NOT_APPROVED",
+  "reviewed": 27,
+  "decision_counts": {
+    "false_negative": 5,
+    "needs_legal_expert": 7,
+    "accept_screening": 5,
+    "false_positive": 10
+  },
+  "tier_by_decision": {
+    "strong_screening_candidate": {
+      "accept_screening": 4,
+      "false_positive": 0,
+      "false_negative": 5,
+      "needs_legal_expert": 1
+    },
+    "hold_manual_review": {
+      "accept_screening": 0,
+      "false_positive": 4,
+      "false_negative": 0,
+      "needs_legal_expert": 6
+    },
+    "exclude_provisional": {
+      "accept_screening": 1,
+      "false_positive": 6,
+      "false_negative": 0,
+      "needs_legal_expert": 0
+    }
+  },
+  "frozen_raw_sha256": "ec94fba3a90b3cd9853b42ac9365154aa54f5973e183f2e06ca2895b127b466b",
+  "frozen_eval_sha256": "944ba82ed4937a41f32c064aaaa89f1b34aeb2d44a89e0860aac51aa3d46bff9",
+  "original_scores_sha256": "0e6cd151559554770293c3b1dfe814c460c3d9ab36a784c2a60c007d18c9ba6e",
+  "human_review_sha256": "58bf74302bc62d3e5759a02280708f3bc8efaf182c3bec34f1688586388ceaab",
+  "curated_candidates": 150,
+  "reviewed_candidates_in_curated_cohort": 10,
+  "flagged_curated_candidates": 6,
+  "flagged_ids": [
+    "GEN0289",
+    "GEN0349",
+    "GEN0151",
+    "GEN0108",
+    "GEN0153",
+    "GEN0075"
+  ],
+  "training_approved": false
+}

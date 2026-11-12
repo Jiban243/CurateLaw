@@ -1,0 +1,11 @@
+{
+  "count": 100,
+  "seed": 20261112,
+  "prompt_version": "m3_guarded_full_v1",
+  "scenario_sha256": "39652b22135a4a2183907dc6c8c91f4be7aa8fed1337510a69618c1f30ec7f10",
+  "frozen_raw_sha256": "ec94fba3a90b3cd9853b42ac9365154aa54f5973e183f2e06ca2895b127b466b",
+  "frozen_eval_sha256": "944ba82ed4937a41f32c064aaaa89f1b34aeb2d44a89e0860aac51aa3d46bff9",
+  "teacher_model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "teacher_temperature": 0.5,
+  "note": "Supplemental scenarios use revised teacher instructions. Experimental cohorts must control for generation recipe and come from one documented common pool."
+}

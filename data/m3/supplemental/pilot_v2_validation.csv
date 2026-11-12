@@ -1,0 +1,6 @@
+scenario_id,task_type,generation_prompt_version,word_count,numbered_sections,finish_reason,v2_score,v2_tier,v2_reasons,additional_pilot_checks,pilot_status,human_decision,human_notes,approved_for_training
+SUP0001,full_agreement,m3_guarded_full_v1,815,16,stop,100,strong_screening_candidate,,missing_placeholder_employer_name,HOLD_FOR_MANUAL_REVIEW,,,false
+SUP0002,full_agreement,m3_guarded_full_v1,838,16,stop,100,strong_screening_candidate,,,PROVISIONAL_STRONG_AWAITING_REVIEW,,,false
+SUP0003,full_agreement,m3_guarded_full_v1,843,16,stop,91,hold_manual_review,employer_only_notice_pay_option_review,,HOLD_FOR_MANUAL_REVIEW,,,false
+SUP0004,full_agreement,m3_guarded_full_v1,873,16,stop,100,strong_screening_candidate,,,PROVISIONAL_STRONG_AWAITING_REVIEW,,,false
+SUP0005,full_agreement,m3_guarded_full_v1,821,16,stop,100,strong_screening_candidate,,,PROVISIONAL_STRONG_AWAITING_REVIEW,,,false
