@@ -1,236 +1,597 @@
+
 # CurateLaw-India
 
-**Quality-aware synthetic data for Indian employment-contract drafting**
+### Quality-Aware Synthetic Data Curation for Indian Employment-Contract Drafting
 
-[Repository](https://github.com/Jiban243/CurateLaw) · [Development history](DEVLOG.md)
+**Lexsi Labs Hiring Challenge | Track 1 — Data-Scarce Domains**
 
-> **Project status (10 November 2026):** M1 reference-corpus preparation and M2 synthetic generation have been completed at prototype level. M3 automated curation and provisional cohort selection are complete; **human calibration and legal review are next**. No model has been fine-tuned or evaluated yet, and no legal/training approvals are implied by the screening results.
+[GitHub Repository](https://github.com/Jiban243/CurateLaw) | [Development Log](DEVLOG.md)
 
-## Overview
+## 1. Project Overview
 
-CurateLaw-India addresses a **data-scarce-domain challenge**: when high-quality domain-specific instruction data is scarce, can generating, verifying, and filtering synthetic examples produce better fine-tuning outcomes than using unfiltered generated examples?
+CurateLaw-India is a data-centric language-model fine-tuning research project focused on Indian employment-contract drafting.
 
-Our domain is **Indian employment-contract drafting**. The project builds a traceable reference corpus, generates fictional drafting instructions and corresponding model-written responses, applies quality-aware curation, and will test the effect of curation on a small Cohere Labs open-weight language model.
+The project addresses the Track 1 problem statement:
 
-**Primary research question:** With the **same base model, number of training examples, training configuration, and held-out evaluation set**, does a model trained on *curated synthetic data* outperform one trained on a *random sample of raw synthetic data*?
+> Where little real data exists, generate, verify and filter synthetic training data, and demonstrate that curation measurably outperforms training on raw generated data.
 
-This is an experimental research prototype, **not a production legal-document service or a source of legal advice**.
+High-quality instruction-response datasets for specialized Indian employment-contract drafting are difficult to obtain. Synthetic data provides an alternative, but raw generated examples may contain:
 
-## Experimental design
+- Incomplete contractual clauses
+- Contradictory salary, probation, or notice terms
+- Incorrect employee roles or working arrangements
+- Unsupported contractual conditions
+- Outdated or potentially inapplicable legal references
+- Duplicate or low-diversity responses
+- Incorrect internal clause references
+
+CurateLaw-India investigates whether automated quality-aware curation can improve downstream fine-tuning outcomes.
+
+### Research Question
+
+**Does fine-tuning on a curated synthetic dataset produce better drafting quality and instruction consistency than fine-tuning the same model on an equally sized raw synthetic dataset?**
+
+The project is an experimental research prototype, not a production legal-advice or contract-generation service.
+
+## 2. Technology Stack
+
+| Component | Technology |
+|---|---|
+| Programming language | Python 3.11 |
+| Teacher model | Qwen/Qwen3-235B-A22B-Instruct-2507 |
+| Teacher inference | Hugging Face Inference Providers |
+| Data hygiene | CuratorKIT |
+| Domain-specific validation | Custom Python quality checks |
+| Fine-tuning | AlignTune (next stage) |
+| Student model | Cohere Labs open-weight model (selection pending) |
+| Evaluation | AuditKIT (planned) |
+| Version control | Git and GitHub |
+
+Related repositories:
+
+- [CuratorKIT](https://github.com/Lexsi-Labs/CuratorKIT)
+- [AlignTune](https://github.com/Lexsi-Labs/aligntune)
+- [AuditKIT](https://github.com/Lexsi-Labs/AuditKIT)
+
+## 3. Research Pipeline
 
 ```text
-M1  Real-world legal/template references and 16-section contract schema
-       |
-       | inform task design, risk checks and review criteria
-       v
-M2  Independently authored fictional scenarios
-       |
-       v
-    Teacher LLM (Qwen3-235B-A22B-Instruct-2507 via Hugging Face)
-       |
-       v
-    400 synthetic instruction-response pairs (frozen raw pool)
-       |
-       +------------------------------+
-       |                              |
-       v                              v
-    Raw baseline                 CuratorKIT + domain checks
-    Random selection             Quality / factual / diversity selection
-       |                              |
-       v                              v
-    150 raw candidates           150 curated candidates
-       |                              |
-       v                              v
-    Model A via AlignTune        Model B via AlignTune
-       +---------------+--------------+
-                       |
-                       v
-              AuditKIT evaluation
-           + base model comparison
-          (40 held-out scenarios)
+M1 — Domain Understanding and Reference Corpus
+                     |
+                     v
+       Employment Contract Schema
+                     |
+                     v
+M2 — Synthetic Scenario and Response Generation
+                     |
+                     v
+       400 Frozen Synthetic Examples
+                     |
+          +----------+-----------+
+          |                      |
+          v                      v
+    RAW DATASET           CURATION PIPELINE
+          |                      |
+          |               CuratorKIT Hygiene
+          |                      |
+          |               Domain Scoring V1
+          |                      |
+          |               Human Calibration
+          |                      |
+          |               Domain Scoring V2
+          |                      |
+          v                      v
+    150 Raw Examples      150 Curated Examples
+          |                      |
+          v                      v
+       AlignTune              AlignTune
+          |                      |
+          v                      v
+       Model A                Model B
+          |                      |
+          +----------+-----------+
+                     |
+                     v
+            AuditKIT Evaluation
+                     |
+                     v
+          Compare Base / Raw / Curated
 ```
 
-**Key distinction:** M1's extracted real-world clauses are **reference/review material**, not the supervised synthetic examples and not automatically cleared for training. Both experimental fine-tuning cohorts must come from the **same M2 synthetic pool**. The raw baseline uses random selection; the curated baseline uses explicit quality-based selection with **matched task quotas**.
+The purpose of the experiment is to isolate the effect of data curation while keeping the model architecture, training-example count, task distribution, and training configuration controlled.
 
-## Progress and verified dataset counts
+## 4. Project Progress
 
-| Stage | Result | Status |
-| --- | --- | --- |
-| **M1 — Source registry** | 29 metadata entries; 6 locally acquired originals (3 templates, 2 central-law PDFs, 1 Delhi government HTML source) | Prepared; provenance and usage-rights review outstanding |
-| **M1 — Contract extraction** | 228 text-block candidates from TPL007 (90) and TPL009 (138) | Classified provisionally; not 228 complete contracts or verified clauses |
-| **M1 — Other reference data** | 55 earlier normalized clause observations; 15 statutory-reference candidates; 16-section schema | Separate record types; **do not add these counts as training samples** |
-| **M1 — Review** | 22 prioritized contract-block decisions | Preliminary; manual and legal review pending |
-| **M2 — Training scenario pool** | 400 fictional scenarios across 5 drafting tasks | Generated |
-| **M2 — Raw synthetic data** | **400 distinct scenario IDs and 400 saved instruction-response pairs** | Frozen and hash-verified |
-| **M2 — Evaluation** | **40** held-out fictional scenarios, 8 per task | Prepared; human review and semantic leakage checks pending |
-| **M3 — CuratorKIT hygiene** | 400 passed / 0 rejected | Schema, cleaning and exact *pair* deduplication only |
-| **M3 — Domain screening** | **309** strong candidates, **84** manual-review holds, **7** provisional exclusions | Heuristic classifications, **not legal approvals** |
-| **M3 — Candidate cohorts** | 150 raw and 150 curated; 56 shared scenario IDs | Provisional, task-matched, not training-ready |
-| **M3 — Human calibration** | 27 review records prepared | **Next step** |
-| **M4–M6 — Fine-tuning/evaluation** | No models trained; no comparison scores yet | Not started |
+**Status as of 12 November 2026**
 
-### Synthetic task distribution
+| Milestone | Description | Status |
+|---|---|---|
+| M1 | Legal reference corpus and contract schema | Completed at prototype level |
+| M2 | Synthetic scenario generation | Completed |
+| M2 | Generate 400 instruction-response examples | Completed |
+| M2 | Freeze 40 held-out evaluation scenarios | Completed |
+| M3.1 | CuratorKIT hygiene validation | Completed |
+| M3.2 | Initial domain scoring | Completed |
+| M3.3 | Provisional cohort construction | Completed |
+| M3.4 | Human calibration (27 examples) | Completed |
+| M3.5 | Improved V2 domain scoring | Completed |
+| M3.5 | Diagnostic analysis and supplemental pilot | Completed |
+| M3.6 | Experimental raw and curated dataset preparation | Completed |
+| M4 | AlignTune fine-tuning | Pending |
+| M5 | AuditKIT evaluation and comparison | Pending |
 
-| Task | Raw generated pool | Curated cohort target (150) |
-| --- | ---: | ---: |
-| Full agreement drafting | 120 | 45 |
-| Individual clause drafting | 100 | 38 |
-| Contract customization | 80 | 30 |
-| Contradiction correction | 60 | 22 |
-| Missing-clause completion | 40 | 15 |
-| **Total** | **400** | **150** |
+The two experimental fine-tuning datasets have been prepared and committed to GitHub.
 
-The raw candidate cohort is also stratified to the same 150-example task quotas. Its recorded screening tiers were **122 strong / 26 held / 2 provisionally excluded**; the curated candidate cohort contains **150 strong-screening candidates**. These differences describe **data selection**, not measured model performance.
+**No fine-tuning or model-comparison results have been reported yet.**
 
-## Data provenance and reproducibility
+## 5. M1 — Domain Corpus Preparation
 
-The **frozen raw pool** contains exactly 400 unique IDs (`GEN0001`–`GEN0400`). Its SHA-256 checksum is:
+The domain preparation stage established a reference framework for Indian employment-contract drafting.
+
+Artifacts include:
+
+- A registry of 29 source metadata entries
+- Six locally acquired reference sources
+- 55 earlier normalized clause observations
+- A 16-section employment-contract schema
+- Clause extraction and classification reports
+- Legal-reference and document-structure observations
+
+Reference material was used to inform task design, contract structure, and validation criteria.
+
+Third-party source documents and extracted copyrighted material are not automatically cleared for redistribution or model training.
+
+### Employment Agreement Structure
+
+The schema covers:
+
+1. Parties and agreement date
+2. Appointment
+3. Duties and responsibilities
+4. Workplace and work arrangement
+5. Fixed annual salary
+6. Probation
+7. Working hours
+8. Leave
+9. Applicable statutory benefits
+10. Confidentiality
+11. Work-related intellectual property
+12. Workplace policies
+13. Termination
+14. Dispute resolution
+15. Governing law
+16. Employer and employee signatures
+
+## 6. M2 — Synthetic Data Generation
+
+Synthetic instruction-response examples were generated using:
+
+**Teacher:** `Qwen/Qwen3-235B-A22B-Instruct-2507`
+
+**Provider:** Hugging Face Inference Providers
+
+### Frozen Training Pool
+
+A total of 400 examples were generated across five drafting tasks.
+
+| Task | Examples |
+|---|---:|
+| Full agreement drafting | 120 |
+| Clause drafting | 100 |
+| Contract customization | 80 |
+| Contradiction correction | 60 |
+| Missing-clause completion | 40 |
+| **Total** | **400** |
+
+The frozen dataset is located at:
+
+`data/m2/frozen/pool_raw_0400.jsonl`
+
+### Held-Out Evaluation Dataset
+
+A separate evaluation dataset contains 40 fictional scenarios, with eight scenarios per task.
+
+File:
+
+`data/m2/frozen/heldout_eval_040.jsonl`
+
+The evaluation scenarios were excluded from the synthetic training pool.
+
+Exact prompt-overlap checks were performed. Broader semantic leakage and near-duplicate relationships still require careful interpretation.
+
+### Frozen Raw Dataset SHA-256
 
 ```text
 ec94fba3a90b3cd9853b42ac9365154aa54f5973e183f2e06ca2895b127b466b
 ```
 
-The frozen 40-case evaluation file was separately fingerprinted:
+The freeze manifest records dataset checksums and provides a reproducibility reference.
 
-```text
-944ba82ed4937a41f32c064aaaa89f1b34aeb2d44a89e0860aac51aa3d46bff9
+## 7. M3 — Synthetic Data Curation
+
+The curation stage combines CuratorKIT hygiene checks with task-specific deterministic validation.
+
+### 7.1 CuratorKIT Hygiene
+
+The initial CuratorKIT checks covered:
+
+- Schema validation
+- Text cleaning
+- Exact-record deduplication
+- Basic response validity
+
+Results:
+
+| Metric | Count |
+|---|---:|
+| Examples processed | 400 |
+| Passed hygiene checks | 400 |
+| Rejected | 0 |
+
+Passing basic hygiene checks does not imply factual or legal correctness.
+
+### 7.2 Domain Scoring V1
+
+An initial rule-based scoring system classified all 400 examples.
+
+| Screening tier | Count |
+|---|---:|
+| Strong screening candidate | 309 |
+| Hold for manual review | 84 |
+| Provisional exclusion | 7 |
+
+V1 identified structural and instruction-following problems, but its initial rules also produced false positives and missed important drafting defects.
+
+### 7.3 Human Calibration
+
+A deliberately selected calibration sample of 27 examples was reviewed.
+
+All 27 examples received documented human decisions and detailed review notes.
+
+| Human decision | Count |
+|---|---:|
+| Accept screening | 5 |
+| False positive | 10 |
+| False negative | 5 |
+| Needs legal expert | 7 |
+| **Total** | **27** |
+
+The calibration revealed several weaknesses:
+
+- Superseded incorrect values being treated as active contradictions
+- Missing joining-date placeholders
+- Numeric and written salary inconsistencies
+- Incorrect internal clause cross-references
+- Unrequested probation extensions
+- Unrequested termination-notice exceptions
+- Employer-only notice-payment provisions
+- Potentially outdated legal references
+
+These findings informed the development of V2.
+
+The calibration sample was intentionally selected for diagnostic purposes. Its error counts are not unbiased dataset-wide error estimates.
+
+### 7.4 Domain Scoring V2
+
+V2 introduced improved checks for factual consistency, drafting structure, instruction adherence, and legal-reference risks.
+
+Results:
+
+| Screening tier | V1 | V2 |
+|---|---:|---:|
+| Strong screening candidate | 309 | 256 |
+| Hold for manual review | 84 | 125 |
+| Provisional exclusion | 7 | 19 |
+
+**124 examples changed screening tiers between V1 and V2.**
+
+V2 detected the previously documented calibration risk cases, although those same cases influenced its design. Independent validation is necessary before making generalization claims.
+
+Scoring and comparison artifacts are available in:
+
+`data/m3/domain_curation_v2/`
+
+## 8. Supplemental Generation Experiment
+
+An additional generation experiment investigated whether more constrained teacher instructions could reduce recurring full-agreement drafting errors.
+
+Preparation produced 100 supplemental fictional scenarios.
+
+A five-example pilot was generated using the original teacher model and temperature, with a revised system prompt.
+
+| Metric | Result |
+|---|---:|
+| Scenarios prepared | 100 |
+| Pilot agreements generated | 5 |
+| Generation finish reason | All completed normally |
+| Preliminary strong screening | 3 |
+| Flagged for review | 2 |
+
+The pilot exposed issues involving placeholders and additional termination-related contractual conditions.
+
+The supplemental dataset is retained as an experimental artifact.
+
+**Supplemental examples were not included in the final 150-example training cohorts.**
+
+This keeps the initial raw-versus-curated comparison within the same original generation pool.
+
+## 9. Experimental Fine-Tuning Datasets
+
+The first experimental training cohorts have been prepared from the original frozen 400-example pool.
+
+Both cohorts contain 150 examples and use the same task distribution.
+
+### Final Task Distribution
+
+| Task | Raw | Curated |
+|---|---:|---:|
+| Full agreement drafting | 12 | 12 |
+| Clause drafting | 45 | 45 |
+| Contract customization | 45 | 45 |
+| Contradiction correction | 32 | 32 |
+| Missing-clause completion | 16 | 16 |
+| **Total** | **150** | **150** |
+
+The full-agreement quota was reduced from the initial provisional design because automated V2 screening left insufficient strong candidates for the original target.
+
+The revised distribution is an experimental design limitation and must be disclosed when interpreting results.
+
+### Raw Cohort
+
+The raw baseline contains 150 examples sampled from the original generated pool without applying the V2 strong-candidate requirement.
+
+### Curated Cohort
+
+The curated dataset contains 150 examples selected using:
+
+- V2 strong-candidate screening
+- Task-aware quality ranking
+- Response-level diversity controls
+- Human-calibration risk exclusions
+- Matched task distribution
+
+### Cohort Overlap
+
+The raw and curated cohorts share **71 scenario IDs**.
+
+This is documented in the cohort manifest. The cohorts are not disjoint, and that overlap should be considered when interpreting the downstream experiment.
+
+### Prepared Training Files
+
+**Raw training dataset**
+
+`data/m3/finetune_ready/raw_150_messages.jsonl`
+
+**Curated training dataset**
+
+`data/m3/finetune_ready/curated_150_messages.jsonl`
+
+**Selection and provenance manifest**
+
+`data/m3/finetune_ready/cohort_manifest.json`
+
+Both training datasets use a chat-style JSONL representation:
+
+```json
+{
+  "messages": [
+    {
+      "role": "user",
+      "content": "Drafting instruction and optional input"
+    },
+    {
+      "role": "assistant",
+      "content": "Generated response"
+    }
+  ]
+}
 ```
 
-We observed **21 extra occurrences of identical normalized responses**. CuratorKIT's exact instruction-following deduplicator passed all 400 because repeated response text does not necessarily imply an identical **instruction + input + output** record. Response-only repetition is therefore recorded for further task-aware diversity analysis.
+These files are prepared for experimental fine-tuning. AlignTune compatibility and tokenization requirements must be verified before training.
 
-The initial leakage check found **zero exact instruction matches** between the synthetic training pool and the evaluation prompts. **Semantic similarity, shared templates, and broader leakage have not yet been ruled out.**
+No formal legal approval is implied by dataset selection.
 
-## Repository layout
-
-The paths below describe artifacts created by the pipeline. Some may be **local-only or deliberately excluded from Git** (especially third-party originals and extracted copyrighted text).
+## 10. Repository Structure
 
 ```text
-.
-├── README.md
-├── DEVLOG.md
-├── scripts/
-│   ├── m2_prepare_training_pool.py
-│   ├── m2_generate_batch.py
-│   ├── m2_audit_batch.py
-│   ├── m3_score_curatelaw.py
-│   └── m3_prepare_candidate_cohorts.py
-└── data/
-    ├── m1/corpus/
-    │   ├── source_metadata.csv
-    │   ├── source_metadata.json
-    │   ├── employment_contract_schema.json
-    │   ├── raw_sources/downloaded/         (third-party originals; restricted)
-    │   ├── extracted_clauses/              (review candidates; restricted)
-    │   └── reports/
-    ├── m2/
-    │   ├── scenarios/                      (training prompts)
-    │   ├── generated_raw/pool_raw.jsonl
-    │   ├── frozen/
-    │   │   ├── pool_raw_0400.jsonl
-    │   │   ├── heldout_eval_040.jsonl
-    │   │   └── freeze_manifest.json
-    │   ├── evaluation/                     (held-out cases and manifest)
-    │   └── quality_reports/
-    └── m3/
-        ├── curatorkit_hygiene/
-        ├── domain_curation/                (scores, tiers, review queue)
-        └── provisional_cohorts/            (150/150 IDs, calibration queue)
+CurateLaw-India/
+|
+|-- README.md
+|-- DEVLOG.md
+|
+|-- scripts/
+|   |-- m2_generate_batch.py
+|   |-- m2_audit_batch.py
+|   |-- m3_score_curatelaw.py
+|   |-- m3_score_v2.py
+|   |-- m3_calibration_report.py
+|   |-- m3_diagnose_v2.py
+|   |-- m3_review_single_flags.py
+|   |-- m3_record_single_flag_reviews.py
+|   |-- m3_supplemental_generation.py
+|   |-- m3_validate_supplemental_pilot.py
+|   |-- m3_pilot_targeted_audit.py
+|   |-- m3_prepare_finetuning.py
+|
+|-- data/
+|   |-- m1/
+|   |   |-- corpus/
+|   |
+|   |-- m2/
+|   |   |-- scenarios/
+|   |   |-- frozen/
+|   |       |-- pool_raw_0400.jsonl
+|   |       |-- heldout_eval_040.jsonl
+|   |       |-- freeze_manifest.json
+|   |
+|   |-- m3/
+|       |-- curatorkit_hygiene/
+|       |-- domain_curation/
+|       |-- domain_curation_v2/
+|       |-- calibration_analysis/
+|       |-- provisional_cohorts/
+|       |-- v2_diagnostics/
+|       |-- supplemental/
+|       |-- finetune_ready/
+|           |-- raw_150_messages.jsonl
+|           |-- curated_150_messages.jsonl
+|           |-- cohort_manifest.json
 ```
 
-Additional source-extraction and inspection scripts live under `data/m1/corpus/tools/` and `scripts/`, depending on the stage.
+Some reference-corpus artifacts are kept locally and excluded from the public repository because their redistribution or training permissions have not been established.
 
-## Local setup
+## 11. Local Setup
 
-Development so far has used **Python 3.11** on macOS, a project-local virtual environment, [CuratorKIT](https://github.com/Lexsi-Labs/CuratorKIT) and [Hugging Face Inference Providers](https://huggingface.co/docs/inference-providers/index).
+The development environment uses Python 3.11.
 
 ```bash
-cd CurateLaw-India
 python3.11 -m venv .venv
 source .venv/bin/activate
 python -m pip install curatorkit huggingface_hub pandas pymupdf python-docx
 ```
 
-If cloning the GitHub repository directly, use the directory name created by `git clone` instead. Install any additional dependencies required by individual scripts. Dependency versions and a locked environment file still need finalization.
+Individual scripts may require additional dependencies. A fully locked environment has not yet been finalized.
 
-For new teacher-generation runs, use a **Hugging Face token with Inference Providers permission**. The generator prompts for it without echoing it. Never commit access tokens, `.env` files, `.venv/`, or downloaded third-party legal documents. API inference and GPU fine-tuning may be billed separately.
+Hugging Face credentials should be supplied through environment variables or secure prompts.
 
-### Reproduce completed local checks
+Never commit API keys, `.env` files, virtual environments, or restricted third-party legal source files.
 
-Assuming the relevant local data files exist:
+## 12. Reproducibility
+
+All scripts should be executed from the repository root.
+
+### Regenerate V2 Screening Reports
 
 ```bash
-python scripts/m2_audit_batch.py
-python scripts/m3_score_curatelaw.py
-python scripts/m3_prepare_candidate_cohorts.py
+python scripts/m3_score_v2.py
 ```
 
-To reproduce the initial CuratorKIT hygiene pass on the frozen pool:
+### Reproduce Calibration Analysis
 
-```python
-from curatorkit import Curator, CuratorConfig
-
-result = Curator(CuratorConfig(
-    dataset="data/m2/frozen/pool_raw_0400.jsonl",
-    name="curatelaw_400_hygiene",
-    dedup="exact",
-    clean=True,
-    schema_gate=True,
-    min_tokens=5,
-    max_tokens=6000,
-    export_formats=["alpaca"],
-    output_dir="data/m3/curatorkit_hygiene",
-)).run()
-result.print_summary()
+```bash
+python scripts/m3_calibration_report.py
 ```
 
-**Do not rerun the paid generator to reproduce a frozen dataset.** Use the saved raw pool and its checksum. Running the same model again does not guarantee byte-identical responses.
+### Reproduce V2 Diagnostics
 
-## M3 curation approach
+```bash
+python scripts/m3_diagnose_v2.py
+```
 
-We separate **mechanical validity**, **task/domain quality**, and **human/legal approval**:
+### Reproduce Experimental Training Cohorts
 
-1. **CuratorKIT hygiene:** schema gate, exact pair deduplication, and text cleaning.
-2. **Deterministic domain screening:** task-sensitive response length and structure; salary, role, notice, probation and work-arrangement preservation; flagged restrictive language; legal-currency and cross-jurisdiction checks.
-3. **Candidate selection:** score/rank examples within each task, control duplicates and preserve quota-matched task diversity.
-4. **Human calibration:** inspect strong, held and excluded examples for false positives/negatives; record reviewers' rationales and adjust rules reproducibly.
-5. **Separate clearance:** verify legal applicability and any source-use permissions before approving material for actual model training.
+```bash
+python scripts/m3_prepare_finetuning.py
+```
 
-Examples discovered during validation include an **incomplete full agreement**, **role inconsistency**, **validator false positives for Markdown headings/signature blocks**, and **an outdated statutory-reference candidate**. These findings motivate curation rules; they do not establish that the rules catch every relevant failure.
+The cohort-selection script uses a fixed random seed and preserves the frozen dataset inputs.
 
-### Current cohort preparation
+Existing generated output files are not silently overwritten when their contents differ.
 
-- **Raw candidates:** 150 records sampled randomly within task quotas from the frozen pool, irrespective of heuristic quality.
-- **Curated candidates:** 150 higher-scoring records within identical task quotas; zero repeated normalized responses within this cohort.
-- **Overlap:** 56 IDs shared across cohorts. This is allowed because the models are trained separately; all evaluation scenarios remain excluded.
-- **Calibration:** 27 human-review records available in `data/m3/provisional_cohorts/M3_CALIBRATION_REVIEW.csv`, with a readable companion report.
-- **Approval:** All candidate datasets remain **provisional**; no training approval has been granted.
+The original frozen dataset and held-out evaluation data should remain unchanged.
 
-## Evaluation plan (not yet executed)
+## 13. Next Stage — AlignTune Fine-Tuning
 
-The intended comparison uses the **same Cohere Labs open-weight base checkpoint**, equal 150-example training cohorts, equal training hyperparameters and decoding settings, and one independent 40-case benchmark. [AlignTune](https://github.com/Lexsi-Labs/aligntune) is planned for fine-tuning; [AuditKIT](https://github.com/Lexsi-Labs/AuditKIT) is planned for model evaluation.
+The next stage is to fine-tune a Cohere Labs open-weight model using AlignTune.
 
-Metrics under consideration include required-clause coverage, instruction/fact consistency, unsupported contractual terms, contradictions, format compliance, and task-specific success. Legal-quality judgments need a documented, human-reviewed rubric. **There are no measured model A versus model B results yet.**
+The experiment will compare:
 
-## Limitations and responsible use
+| Model | Description |
+|---|---|
+| Base | Original pretrained or instruction-tuned checkpoint |
+| Model A | Base model fine-tuned on raw synthetic data |
+| Model B | Same base model fine-tuned on curated synthetic data |
 
-- **Source rights:** Original third-party PDF/DOCX/HTML documents and their extracted text are **not automatically licensed for redistribution or training**. M1 permission review remains open; keep restricted artifacts out of public commits.
-- **Legal currency:** Applicability depends on jurisdiction, employee category, commencement dates, transitional provisions and current law. Automated keyword checks are not legal opinions.
-- **Automated scoring:** The 309/84/7 screening split describes heuristic tiers only; even a strong candidate may contain unsupported assertions or drafting defects.
-- **Evaluation validity:** Current held-out cases are fictional and not fully human verified. Exact-match isolation alone is insufficient to rule out semantic leakage.
-- **Generalization:** A small task-matched comparison will not establish universal performance across all Indian employment contracts or states.
-- **Budget:** Teacher inference was tested through Hugging Face; GPU training costs and the final student checkpoint still require validation.
+### Experimental Controls
 
-## Immediate next steps
+Both fine-tuning runs should use:
 
-1. **M3.4 — Human calibration:** review the 27 cases, log accepted flags, false positives/negatives and legal-review holds; refine and rerun scoring when justified.
-2. **M3 finalization:** audit near-duplicates and diversity, validate legal/permission gates, and freeze approved, quota-matched raw and curated training manifests.
-3. **M4/M5 — AlignTune:** select a suitable Cohere Labs checkpoint, run a low-cost smoke test and fine-tune both cohorts with identical settings.
-4. **M6 — AuditKIT:** validate the held-out benchmark and report base/raw/curated results, failure breakdowns, costs and limitations.
+- The same base checkpoint
+- Equal numbers of training examples
+- Matched task distributions
+- Identical training configurations
+- Comparable token and compute budgets
+- The same evaluation dataset
+- Identical inference and decoding settings
 
-## Contributions and project history
+Token-length distributions and effective training-token exposure should be recorded because equal example counts do not guarantee equal training budgets.
 
-CurateLaw-India is being developed by a **two-person team**. **Jiban ([Jiban243](https://github.com/Jiban243))** has led the M1–M3 data preparation and reported pipeline runs documented here. The shared [DEVLOG.md](DEVLOG.md) records contributor-specific decisions, commit references and engineering trade-offs as the project evolves. Additional contributions should be attributed in that log and in Git history.
+AlignTune integration has not yet been validated.
+
+## 14. Evaluation Plan — AuditKIT
+
+After training, AuditKIT will be used to compare the base model and the two fine-tuned variants on the frozen 40-scenario evaluation set.
+
+Planned evaluation dimensions include:
+
+1. Required-clause coverage
+2. Instruction and factual consistency
+3. Contractual term preservation
+4. Contradiction detection and correction
+5. Unrequested contractual additions
+6. Structural and formatting compliance
+7. Unsupported or questionable legal references
+
+Results will be reported by task and overall.
+
+The project's central hypothesis is that quality-aware curation improves downstream drafting performance compared with training on raw synthetic data under matched experimental conditions.
+
+**This hypothesis has not yet been evaluated or confirmed.**
+
+## 15. Limitations and Responsible Use
+
+CurateLaw-India has several important limitations:
+
+- Automated quality screening does not establish legal correctness.
+- Human calibration was diagnostic and not statistically representative.
+- Some statutory references require expert verification.
+- Full agreements are underrepresented in the first training cohorts.
+- The two training datasets overlap by 71 scenario IDs.
+- The held-out evaluation set contains fictional scenarios.
+- Exact prompt-isolation checks do not establish complete semantic independence.
+- Source-document redistribution and training permissions remain subject to verification.
+- Fine-tuning and downstream evaluation results are pending.
+
+Generated agreements should not be relied on as legally valid employment contracts without qualified legal review.
+
+## 16. Team and Contributions
+
+CurateLaw-India is developed by a two-person team for the Lexsi Labs hiring challenge.
+
+**Jiban — M1–M3: Data Preparation and Curation**
+
+- Domain research and reference-corpus preparation
+- Employment-contract schema
+- Synthetic scenario and response generation
+- CuratorKIT hygiene integration
+- Domain-quality scoring
+- Human calibration and diagnostic analysis
+- Improved V2 curation
+- Experimental training-dataset preparation
+- Reproducibility and Git handoff
+
+**Ayush — M4 onward: Model Fine-Tuning and Evaluation**
+
+- Cohere Labs model selection and compatibility checks
+- AlignTune fine-tuning setup
+- Raw-versus-curated training experiments
+- AuditKIT-based evaluation
+- Model comparison and experimental reporting
+
+Contributions and experiment outcomes should be updated as work progresses.
+
+See [DEVLOG.md](DEVLOG.md) and Git commit history for additional engineering context.
+
+## 17. Current Handoff
+
+**Latest completed M3 commit:** `d4f8938`
+
+**Working branch:** `jiban/m1-m3-progress`
+
+**Handoff status:** Experimental training datasets prepared and pushed to GitHub.
+
+Next action: validate AlignTune, train both variants, and evaluate them against the held-out benchmark.
 
 ---
 
-*Research prototype for the Track 1 data-scarce-domains challenge. Do not use generated agreements without qualified legal review.*
+**CurateLaw-India — A data-centric synthetic-data research prototype for Indian employment-contract drafting.**
