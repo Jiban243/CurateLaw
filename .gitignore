@@ -10,3 +10,10 @@ data/m1/corpus/raw_sources/downloaded/
 data/m1/corpus/processed_sources/
 data/m1/corpus/extracted_clauses/
 data/m1/corpus/reports/
+
+# M5 V3 local evaluation inputs and private review artifacts
+/evaluation_artifacts/m5_v3/inputs/
+/results/m5_v3/PRIVATE_blinding_key.json
+/results/m5_v3/blinded_review_form.csv
+/results/m5_v3/flagged_review_queue.csv
+/results/m5_v3/screening_summary.json

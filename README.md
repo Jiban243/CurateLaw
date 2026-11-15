@@ -102,7 +102,7 @@ The purpose of the experiment is to isolate the effect of data curation while ke
 
 ## 4. Project Progress
 
-**Status as of 12 November 2026**
+**Status as of 16 November 2026**
 
 | Milestone | Description | Status |
 |---|---|---|
@@ -117,10 +117,22 @@ The purpose of the experiment is to isolate the effect of data curation while ke
 | M3.5 | Improved V2 domain scoring | Completed |
 | M3.5 | Diagnostic analysis and supplemental pilot | Completed |
 | M3.6 | Experimental raw and curated dataset preparation | Completed |
-| M4 | AlignTune fine-tuning | Pending |
-| M5 | AuditKIT evaluation and comparison | Pending |
+| M4 | AlignTune fine-tuning | Completed |
+| M5 | AuditKIT evaluation and comparison | Completed (experimental) |
+| M5.1 | M5 V3 evaluation screening and error-review preparation | Completed (screening) |
 
-The two experimental fine-tuning datasets have been prepared and committed to GitHub.
+**M4–M5 completion update — 16 November 2026**
+
+**M4 — Completed:** Two independent QLoRA fine-tuning runs were completed using the same CohereLabs/tiny-aya-global base model. Each arm used 150 examples, two epochs and 76 optimizer steps. The executed notebook is available at `notebooks/CurateLaw_M4_FineTuning.ipynb`. Saved adapters remain in the documented external artifact storage.
+
+**M5 — Completed at experimental level:** The base, raw-fine-tuned and curated-fine-tuned models were evaluated on the same 40 frozen held-out scenarios, producing 120 responses. Corrected expected-fact presence was 83.99% for Base, 80.54% for Raw and 80.18% for Curated. Token-limit avoidance was 2.5%, 85.0% and 87.5%, respectively.
+
+**M5 V3 — Screening completed:** A standalone, reproducible response-screening pipeline was added at `scripts/m5_v3_prepare_review.py`, with a documented rubric and public screening summary. Automated flags are not verified correctness scores.
+
+**Research outcome:** Curation reduced defects detected by the M3 V2 heuristic, but the experiment did not establish an overall downstream advantage over raw synthetic training. Results are exploratory, and independent legal verification and stronger human-adjudicated evaluation remain outstanding.
+
+For training decisions, evaluation limitations and reproducibility details, see `README_M4_M5.md` and `decision.md`.
+
 
 **No fine-tuning or model-comparison results have been reported yet.**
 

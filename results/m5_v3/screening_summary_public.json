@@ -1,0 +1,72 @@
+{
+  "status": "EXPLORATORY_AUTOMATED_SCREENING_NOT_VERIFIED_ACCURACY",
+  "benchmark_sha256": "944ba82ed4937a41f32c064aaaa89f1b34aeb2d44a89e0860aac51aa3d46bff9",
+  "input_sha256": {
+    "heldout_eval_040.jsonl": "944ba82ed4937a41f32c064aaaa89f1b34aeb2d44a89e0860aac51aa3d46bff9",
+    "base_predictions.jsonl": "5d46561f6b6b866c4d2883cbbb86096554cbe9f5ff0314bee24293b9a0d50992",
+    "raw_predictions.jsonl": "139c687110599559f0cb22bd52059cd84faab3fcda710cdbb7f09e9191b9539b",
+    "curated_predictions.jsonl": "e006183f7921f5e7b8a90183b896dacc5576423c7b53d002285bfda513495023"
+  },
+  "examples_per_model": 40,
+  "raw_curated_exact_response_ties": 14,
+  "identical_scenario_ids": [
+    "EVAL017",
+    "EVAL018",
+    "EVAL019",
+    "EVAL020",
+    "EVAL021",
+    "EVAL022",
+    "EVAL023",
+    "EVAL024",
+    "EVAL025",
+    "EVAL031",
+    "EVAL032",
+    "EVAL034",
+    "EVAL036",
+    "EVAL037"
+  ],
+  "train_inference_label_mismatch_scenarios": 16,
+  "flags_by_model": {
+    "base": {
+      "long_output_review": 12,
+      "old_location_pune_present": 1,
+      "old_notice_45_days_present": 1,
+      "old_probation_six_months_present": 1,
+      "old_remote_arrangement_present": 1,
+      "old_role_ux_designer_present": 1,
+      "repeated_long_paragraph": 6,
+      "token_limit_hit": 39,
+      "unresolved_value_placeholder": 4,
+      "written_salary_amount_review": 2
+    },
+    "raw": {
+      "long_output_review": 7,
+      "old_location_pune_present": 1,
+      "old_notice_45_days_present": 1,
+      "old_probation_six_months_present": 1,
+      "old_remote_arrangement_present": 1,
+      "old_role_ux_designer_present": 1,
+      "token_limit_hit": 6,
+      "unresolved_value_placeholder": 4,
+      "written_salary_amount_review": 2
+    },
+    "curated": {
+      "long_output_review": 6,
+      "old_location_pune_present": 1,
+      "old_notice_45_days_present": 1,
+      "old_probation_six_months_present": 1,
+      "old_remote_arrangement_present": 1,
+      "old_role_ux_designer_present": 1,
+      "repeated_long_paragraph": 2,
+      "token_limit_hit": 5,
+      "unresolved_value_placeholder": 5,
+      "written_salary_amount_review": 3
+    }
+  },
+  "limitations": [
+    "Flags indicate candidates for review, not confirmed inaccuracies.",
+    "This script intentionally does not compute a new model-quality score.",
+    "Benchmark expected facts and legal content are not independently verified.",
+    "Do not publish the private blinding key with the reviewer form."
+  ]
+}
